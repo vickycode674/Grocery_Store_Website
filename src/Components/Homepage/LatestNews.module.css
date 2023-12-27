@@ -1,0 +1,275 @@
+@import url('lates.css');
+.latestNews1 {
+    position: absolute;
+    top: 0px;
+    left: 573px;
+    font-size: var(--heading-05-heading-05-600-size);
+    line-height: 120%;
+    font-weight: 600;
+}
+.imageIcon {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: var(--br-5xs) var(--br-5xs) 0px 0px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.div {
+    position: absolute;
+    top: 6px;
+    left: 19px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.nov {
+    position: absolute;
+    top: 36px;
+    left: 15px;
+    font-size: var(--caps-lock-small-caps-lock-size);
+    letter-spacing: 0.03em;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--gray-scale-gray-500);
+}
+.date {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    border-radius: var(--br-9xs);
+    background-color: var(--gray-scale-white);
+    width: 58px;
+    height: 58px;
+}
+.image3 {
+    position: relative;
+    width: 424px;
+    height: 324px;
+}
+.tag1Icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.food {
+    position: relative;
+    line-height: 150%;
+}
+.categories {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+}
+.admin1 {
+    color: var(--gray-scale-gray-700);
+}
+.admin {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+    color: var(--gray-scale-gray-500);
+}
+.chatcentered1Icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.comments {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+    color: var(--gray-scale-gray-600);
+}
+.info2 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+}
+.curabiturPorttitorOrci3 {
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    color: var(--branding-success);
+    display: inline-block;
+    width: 376px;
+}
+.info1 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.readMore {
+    position: relative;
+    line-height: 120%;
+    font-weight: 600;
+}
+.arrowIcon3 {
+    position: relative;
+    width: 15px;
+    height: 12.05px;
+    object-fit: cover;
+}
+.button {
+    border-radius: var(--br-24xl);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+    font-size: var(--body-medium-body-medium-600-size);
+    color: var(--branding-success);
+}
+.info {
+    border-radius: 0px 0px var(--br-5xs) var(--br-5xs);
+    background-color: var(--gray-scale-white);
+    flex-shrink: 0;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-5xl);
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--body-small-body-small-400-size);
+    color: var(--gray-scale-gray-700);
+}
+.blogCard {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.div1 {
+    position: absolute;
+    top: 6px;
+    left: 17px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.nov1 {
+    position: absolute;
+    top: 36px;
+    left: 17px;
+    font-size: var(--caps-lock-small-caps-lock-size);
+    letter-spacing: 0.03em;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--gray-scale-gray-500);
+}
+.date1 {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    border-radius: var(--br-9xs);
+    background-color: var(--color-gray-100);
+    width: 58px;
+    height: 58px;
+}
+.curabiturPorttitorOrci4 {
+    position: relative;
+    font-size: var(--body-large-body-large-500-size);
+    line-height: 150%;
+    font-weight: 500;
+    color: var(--gray-scale-gray-900);
+    display: inline-block;
+    width: 376px;
+}
+.info3 {
+    border-radius: 0px 0px var(--br-5xs) var(--br-5xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    flex-shrink: 0;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-5xl);
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--body-small-body-small-400-size);
+    color: var(--gray-scale-gray-700);
+}
+.blogCard1 {
+    position: absolute;
+    top: 70px;
+    left: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.div2 {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.nov2 {
+    position: absolute;
+    top: 36px;
+    left: 19px;
+    font-size: var(--caps-lock-small-caps-lock-size);
+    letter-spacing: 0.03em;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--gray-scale-gray-500);
+}
+.blogCard2 {
+    position: absolute;
+    top: 70px;
+    left: 896px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.latestNews {
+    position: relative;
+    width: 90%;
+    left: 80px;
+    height: 564px;
+    text-align: center;
+    font-size: var(--body-xl-body-xl-500-size);
+    color: var(--gray-scale-gray-900);
+    font-family: var(--body-medium-body-medium-600);
+}
+

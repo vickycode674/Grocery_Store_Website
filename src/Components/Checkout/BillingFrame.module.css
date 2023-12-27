@@ -1,0 +1,296 @@
+@import url('billingFrame.css');
+.email {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    line-height: 130%;
+}
+.inputField {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 308px;
+    height: 49px;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: var(--gray-scale-gray-400);
+}
+.phone {
+    position: absolute;
+    top: 338px;
+    left: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.email1 {
+    position: absolute;
+    top: 338px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.selects {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.chevronDownIcon2 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.inputField2 {
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    flex-shrink: 0;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-sm) var(--padding-base);
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-base);
+    color: var(--gray-scale-gray-400);
+}
+.states {
+    position: absolute;
+    top: 244px;
+    left: 396px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.select {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    width: 222px;
+    flex-shrink: 0;
+}
+.countryregion {
+    position: absolute;
+    top: 244px;
+    left: 0px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.inputField4 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 572px;
+    height: 49px;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: #FF6316;
+}
+.streetAddress {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.optional {
+    color: #808080;
+}
+.companyNameOptionalContainer {
+    position: relative;
+    line-height: 150%;
+}
+.inputField5 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 230px;
+    height: 49px;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: var(--gray-scale-gray-400);
+}
+.companyName {
+    position: absolute;
+    top: 56px;
+    left: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.inputField6 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 250px;
+    height: 49px;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: #999;
+}
+.lastName {
+    position: absolute;
+    top: 56px;
+    left: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.firstName {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+.billingInformation {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: var(--body-xxl-body-xxl-500-size);
+    line-height: 150%;
+    font-weight: 500;
+}
+.normal1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 3px;
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-200);
+    box-sizing: border-box;
+}
+.checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.cashOnDelivery1 {
+    position: absolute;
+    top: 436px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    color: var(--gray-scale-gray-700);
+}
+.phoneParent {
+    position: relative;
+    width: 872px;
+    height: 457px;
+}
+.frameChild {
+    position: relative;
+    border-top: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 800px;
+    height: 1px;
+}
+.additionalInfo1 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+}
+.inputField8 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-100);
+    box-sizing: border-box;
+    width: 800px;
+    height: 100px;
+    flex-shrink: 0;
+    font-size: var(--font-size-base);
+    color: var(--gray-scale-gray-400);
+}
+.firstName2 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    font-size: var(--body-small-body-small-400-size);
+}
+.additionalInfo {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: var(--body-xxl-body-xxl-500-size);
+}
+.groupParent {
+    top: 10px;
+    position: relative;
+    width: 61%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    text-align: left;
+    font-size: var(--body-small-body-small-400-size);
+    color: var(--gray-scale-gray-900);
+    font-family: var(--body-small-body-small-400);
+}
+
+.stateSelect{
+    color:#FFffff ;
+    font-size: small;
+    border-radius: 5px;
+    left: 5px;
+    border-color: #ffffff;
+}
+.checkbox{
+    color:#FF6316 ;
+    font-size: small;
+    justify-content: space-between;
+    border-radius: 10px;
+    left: 0px;
+    border-color: #FF6316;
+}
