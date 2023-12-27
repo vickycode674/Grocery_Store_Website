@@ -4,9 +4,6 @@ import Dashboard from "../Dashboard/Dashboard";
 import OrderDetails from "./Order/OrderDetails";
 import OrderHistory from "./Order/OrderHistory";
 import Settings from "./Settings/Settings";
-// import OrderDetails from "./Order/OrderPages/OrderDetails";
-// import OrderHistory from "./Order/OrderPages/OrderHistory";
-// import Settings from "./Settings/Settings";
 
 const DashboardRoutes = () => {
   return (
