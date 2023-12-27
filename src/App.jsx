@@ -8,12 +8,14 @@ import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
 const App = () => {
   return (
     <div>
+    <About/>
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
       </Routes>
+
     </div>
   );
 };
