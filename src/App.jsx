@@ -5,6 +5,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import Settings from "./Components/Dashboard/Settings/Settings";
 import OrderDetails from "./Components/Dashboard/Order/OrderDetails";
 import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
+import VegProducts from "./Components/Products/VegProducts";
 
 
 const App = () => {
