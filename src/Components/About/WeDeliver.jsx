@@ -1,11 +1,15 @@
 // import React from "react";
+import check1 from "./Images/check 1.png";
+import group1 from "./Images/group1.png";
+import delivery from "./Images/delivery.png";
+
 
 export const WeDelvieredYou = () => {
     return (
-        <div className="relative w-[1476px] h-[616px] top-[-378px]">
+        <div className="relative w-[1476px] h-[116px] top-[-878px] left-[20%]">
             <div className="absolute w-[556px] h-[431px] top-[80px] left-0 text-left">
                 <p className="absolute w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
-                    We Delivered, <br/> You Enjoy Your Order.
+                    We Deliver, <br/> You Enjoy Your Order.
                 </p>
                 <p className="absolute w-[536px] top-[160px]  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)]">
                     Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris
@@ -17,7 +21,7 @@ export const WeDelvieredYou = () => {
                         <div className="relative w-[20px] h-[20px]">
                             <div className="relative h-[20px] rounded-[100px]">
                                 <div className="absolute w-[20px] h-[20px] top-0 left-0 bg-brandingsuccess rounded-[100px] opacity-10" />
-                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src="./images/check 1.png" />
+                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1} />
                             </div>
                         </div>
                         <div className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
@@ -29,7 +33,7 @@ export const WeDelvieredYou = () => {
                         <div className="relative w-[20px] h-[20px]">
                             <div className="relative h-[20px] rounded-[100px]">
                                 <div className="absolute w-[20px] h-[20px] top-0 left-0 bg-brandingsuccess rounded-[100px] opacity-10" />
-                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src="./images/check 1.png" />
+                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1}  />
                             </div>
                         </div>
                         <p className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
@@ -41,7 +45,7 @@ export const WeDelvieredYou = () => {
                         <div className="relative w-[20px] h-[20px]">
                             <div className="relative h-[20px] rounded-[100px]">
                                 <div className="absolute w-[20px] h-[20px] top-0 left-0 bg-brandingsuccess rounded-[100px] opacity-10" />
-                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src="./images/check 1.png" />
+                                <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1}  />
                             </div>
                         </div>
                         <p className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
@@ -54,10 +58,10 @@ export const WeDelvieredYou = () => {
                     <div className="relative w-fit mt-[-0.50px] font-body-medium-body-medium-600 font-[number:var(--body-medium-body-medium-600-font-weight)] text-gray-scalewhite text-[length:var(--body-medium-body-medium-600-font-size)] tracking-[var(--body-medium-body-medium-600-letter-spacing)] leading-[var(--body-medium-body-medium-600-line-height)] whitespace-nowrap [font-style:var(--body-medium-body-medium-600-font-style)]">
                         Shop Now
                     </div>
-                    <img className="relative w-[16.5px] h-[13.55px] mr-[-0.75px]" alt="Group" src="./Images/group1.png" />
+                    <img className="relative w-[16.5px] h-[13.55px] mr-[-0.75px]" alt="Group" src={group1} />
                 </button>
             </div>
-            <img className="absolute w-[815px] h-[580px] top-0 left-[590px]" alt="Image" src="./Images/delivery.png" />
+            <img className="absolute w-[815px] h-[580px] top-0 left-[590px]" alt="Image" src={delivery} />
         </div>
     );
 };

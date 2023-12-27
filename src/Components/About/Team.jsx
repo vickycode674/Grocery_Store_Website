@@ -1,11 +1,16 @@
 // import React from "react";
 import { TeamCard } from "./TeamCard";
+import ceo from "./Images/people/ceo.png";
+import Manager from "./Images/people/Manager.png";
+import Security from "./Images/people/Security.png";
+import Worker from "./Images/people/worker.png";
+
 
 export const Team = () => {
     return (
-        <div className="w-[1920px] h-[576px] -mt-80 ">
-            <div className=" w-[1820px] h-[436px]  ml-[-118px] left-0 [background:linear-gradient(180deg,rgb(242.25,242.25,242.25)_0%,rgb(255,255,255)_100%)]">
-                <div className="inline-flex flex-col ml-[-212px] items-center gap-[12px] relative top-9">
+        <div className="w-[720px] h-[576px] -mt-80 ml-[0%] ">
+            <div className=" w-[1510px] h-[436px]   left-0 [background:linear-gradient(180deg,rgb(242.25,242.25,242.25)_0%,rgb(255,255,255)_100%)]">
+                <div className="inline-flex flex-col ml-[7%] items-center gap-[12px] relative top-9">
                     <div className="relative  w-fit mt-[-1.00px] font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] text-center tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] whitespace-nowrap [font-style:var(--heading-02-heading-02-600-font-style)]">
                         Our Awesome Team
                     </div>
@@ -14,16 +19,16 @@ export const Team = () => {
                         luctus tincidunt a a mi.
                     </p>
 
-                    <div className="flex gap-4">
+                    <div className="flex gap-3">
                         <TeamCard
-                            image="./Images/ceo.png"
+                            image={ceo}
                             imageClassName="![object-fit:unset]"
                             property1="default"
                             text="Jenny Wilson"
                             text1="Ceo & Founder"
                         />
                         <TeamCard
-                            image="./Images/worker.png"
+                            image={Worker}
                             imageClassName="![object-fit:unset]"
                             property1="default"
                             text="Jane Cooper"
@@ -31,7 +36,7 @@ export const Team = () => {
                         />
 
                         <TeamCard
-                            image="./Images/Security.png"
+                            image={Security}
                             imageClassName="![object-fit:unset]"
                             property1="default"
                             text="Cody Fisher"
@@ -39,7 +44,7 @@ export const Team = () => {
                         />
 
                         <TeamCard
-                            image="./Images/Manager.png"
+                            image={Manager}
                             imageClassName="![object-fit:unset]"
                             property1="default"
                             text="Robert Fox"
