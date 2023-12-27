@@ -5,9 +5,10 @@ import About from './Components/About/About';
 const App = () => {
   return (
     <div>
-       <Routes>
+       {/* <Routes>
        <Route path='/about' element={<About/>}/>
-       </Routes>
+       </Routes> */}
+       <About/>
     </div>
   )
 }
