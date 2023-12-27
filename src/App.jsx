@@ -7,6 +7,7 @@ import OrderDetails from "./Components/Dashboard/Order/OrderDetails";
 import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
 import VegProducts from "./Components/Products/VegProducts";
 import Home from "./Components/pages/Home";
+import Main from './Components/Contact/Main'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
