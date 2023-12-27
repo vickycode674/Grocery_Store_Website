@@ -3,10 +3,10 @@ import About1 from "./Images/About1.png";
 import BG from "./Images/BG.png";
 import About2 from "./Images/About2.png";
 import leaf2 from "./Images/leaf2.png";
-// import { WeDelvieredYou } from "./WeDeliver";
+import { WeDelvieredYou } from "./WeDeliver";
 // // import { Box } from "./Box/Box1";
-// import {Team} from "./Team";
-// import { Testimonial1 } from "./Testimonials/Testimonial1";
+import {Team} from "./Team";
+import { Testimonial1 } from "./Testimonials/Testimonial1";
 const About = () => {
     return (
 
@@ -34,14 +34,14 @@ const About = () => {
 
                     <p className=" absolute w-[607px] top-[4px] text-#000000 text-5xl font-bold  left-[95%] ">100% Trusted <br />Organic Food Store</p>
 
-                    <p className="absolute  w-[570px] top-28  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-500 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)] text-left left-[95%]">
+                    <p className="absolute  w-[570px] top-36  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-500 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)] text-left left-[95%]">
                         Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est
                         luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.
                     </p>
 
-                    <div className="grid-cols-2">
+                    <div className="grid-cols-2 ">
 
-                        <div className="inline-flex flex-wrap gap-[1px]  bg-gray-scalewhite relative left-[48%]  mt-[13%] ">
+                        <div className="inline-flex flex-wrap gap-[1px]  bg-gray-scalewhite relative left-[48%]  mt-[17%] ">
                             <div className=" inline-flex flex-col items-start p-[20px] relative bg-[#00b2061a] rounded-[1000px]">
                                 <img className="relative flex-[0_0_auto]" alt="Icon" src={leaf2} />
                             </div>
@@ -72,9 +72,9 @@ const About = () => {
                         {/* part 3 delivery agent */}
                     </div>
                 </div>
-                {/* <WeDelvieredYou/>
-            <Team/>
-            <Testimonial1/> */}
+                 <WeDelvieredYou/>
+               <Team/>
+            <Testimonial1/>  
 
             </div>
         </div>
