@@ -1,16 +1,23 @@
-// import React from 'react'
-import { Route, Routes } from 'react-router-dom';
-import About from './Components/About/About';
+import { Route, Routes } from "react-router-dom";
+// import About from './Components/About/About';
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Settings from "./Components/Dashboard/Settings/Settings";
+import OrderDetails from "./Components/Dashboard/Order/OrderDetails";
+import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
 
 const App = () => {
   return (
     <div>
-       {/* <Routes>
-       <Route path='/about' element={<About/>}/>
-       </Routes> */}
-       <About/>
-    </div>
-  )
-}
+    <About/>
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/setting" element={<Settings />} />
+        <Route path="/order-details" element={<OrderDetails />} />
+        <Route path="/order-history" element={<OrderHistory />} />
+      </Routes>
 
-export default App
+    </div>
+  );
+};
+
+export default App;
