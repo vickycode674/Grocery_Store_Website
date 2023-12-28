@@ -30,7 +30,7 @@
 import PropTypes from "prop-types";
 // import React from "react";
 import { Price } from "./Price";
-import { text } from "@fortawesome/fontawesome-svg-core";
+// import { text } from "@fortawesome/fontawesome-svg-core";
 
 export const Product1 = ({ image = "image.svg", rating = "rating.svg",text="healthy" }) => {
   return (
