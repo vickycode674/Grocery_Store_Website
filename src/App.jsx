@@ -10,12 +10,10 @@ import Home from "./Components/pages/Home";
 import Main from './Components/Contact/Main'
 import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
-// import Shop1 from "./Components/Shop/MainShop/Shop1";
-import Footer from "./Components/Homepage/Footer";
+
 
 const App = () => {
   return (
-
     <div>
       <Header/>
       <Routes>
@@ -23,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />

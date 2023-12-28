@@ -31,11 +31,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-around items-center m-6">
+      <div className="flex justify-around items-center m-6 w-[95%]">
         <img src={Logo2} className="w-[300px]" />
         <div className="flex border-2 items-center rounded-lg">
           <BiSearch className="text-2xl ml-2 mt-0.5" />
-          <input type="text" className="px-2" placeholder="Search..." />
+          <input type="text" className="px-2 w-64" placeholder="Search..." />
           <button className="bg-[#FF6316] text-white px-6 py-2 rounded-r-lg text-sm font-bold">
             Search
           </button>
@@ -51,6 +51,10 @@ const Header = () => {
               {count}
             </span>
           </span>
+          <div className="ml-6 -mt-3">
+            <p className="text-[#4D5D4D] text-base">Shopping cart</p>
+            <p className="text-sm font-medium">$100.00</p>
+          </div>
         </div>
       </div>
       {/* <Navbar
