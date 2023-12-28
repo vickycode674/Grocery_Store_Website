@@ -16,8 +16,8 @@ import { TestimonialsCard } from "../Testimonials/TestimonialsCard";
 
 export const Testimonial1 = () => {
     return (
-        <div className="inline-flex flex-col  mt-[-1px] items-center justify-center gap-[40px] px-0 py-[100px] relative bg-gray-scalegray-50">
-            <div className="flex w-[980px] ml-[-28px] items-center justify-between px-[300px] py-0 relative flex-[0_0_auto]">
+        <div className="inline-flex flex-col overflow-x-hidden mt-[-1px] items-center justify-center gap-[40px] px-0 py-[100px] relative bg-gray-scalegray-50">
+            <div className="flex w-[980px]  ml-[-28px] items-center justify-between px-[300px] py-0 relative flex-[0_0_auto]">
                 <div className="relative  mt-[-1.00px] font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] text-center tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] whitespace-nowrap [font-style:var(--heading-02-heading-02-600-font-style)]">
                     Client Testimonail
                 </div>

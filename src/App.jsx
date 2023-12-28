@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-
 import About from "./Components/About/About";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Settings from "./Components/Dashboard/Settings/Settings";
@@ -10,6 +9,7 @@ import Home from "./Components/pages/Home";
 import Main from './Components/Contact/Main'
 import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
+import Shop1 from "./Components/Shop/MainShop/Shop1";
 import SignIn from "./Components/SignIn/SignIn";
 
 const App = () => {
@@ -29,6 +29,7 @@ const App = () => {
       </Routes>
       <SubscribeOurNewsletter/>
     </div>
+
   );
 };
 

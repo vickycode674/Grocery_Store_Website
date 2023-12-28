@@ -6,7 +6,7 @@ import delivery from "./Images/delivery.png";
 
 export const WeDelvieredYou = () => {
     return (
-        <div className="relative w-[1476px] h-[116px] top-[-878px] left-[20%]">
+        <div className="relative w-[1476px] h-[116px] top-[-878px] left-[20%] ">
             <div className="absolute w-[556px] h-[431px] top-[80px] left-0 text-left">
                 <p className="absolute w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
                     We Deliver, <br/> You Enjoy Your Order.
