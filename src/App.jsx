@@ -8,10 +8,13 @@ import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
 import VegProducts from "./Components/Products/VegProducts";
 import Home from "./Components/pages/Home";
 import Main from './Components/Contact/Main'
+import Header from './Components/Homepage/Header'
+import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
 
 const App = () => {
   return (
     <div>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -22,6 +25,7 @@ const App = () => {
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
       </Routes>
+      <SubscribeOurNewsletter/>
     </div>
   );
 };
