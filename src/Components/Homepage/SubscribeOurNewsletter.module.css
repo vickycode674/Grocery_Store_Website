@@ -1,27 +1,32 @@
 .subscribeOurNewsletterChild {
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 100%;
     top: 100%;
     right: 0%;
     bottom: -100%;
     left: 0%;
-    background-color: #ff6316;
+    background-color: #ff6316; */
 }
 .subcribeOurNewsletter1 {
-    position: relative;
+    /* position: relative;
     line-height: 150%;
-    font-weight: 600;
+    font-weight: 600; */
+    font-weight: 500;
+    font-size: 24px;
+    
 }
 .pellentesqueEuNibh1 {
-    position: relative;
+    /* position: relative;
     font-size: var(--body-small-body-small-400-size);
     line-height: 150%;
     display: inline-block;
-    width: 448px;
+    width: 448px; */
+    font-size: 14px;
+    color:#FF0000;
 }
 .subcribeOurNewsletterParent {
-    position: absolute;
+    /* position: absolute;
     height: 50.62%;
     width: 23.33%;
     top: 24.69%;
@@ -32,18 +37,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 4px;
+    gap: 4px; */
     
 }
 .yourEmailAddress1 {
-    position: relative;
+    /* position: relative;
     line-height: 150%;
     display: inline-block;
     width: 400px;
-    flex-shrink: 0;
+    flex-shrink: 0; */
 }
 .inputField {
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 91.79%;
     top: 0%;
@@ -57,15 +62,15 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 14px 24px;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 .subscribe1 {
-    position: relative;
+    /* position: relative;
     line-height: 20px;
-    font-weight: 600;
+    font-weight: 600; */
 }
 .button {
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 30.22%;
     top: 0%;
@@ -80,10 +85,10 @@
     justify-content: center;
     padding: 16px 40px;
     box-sizing: border-box;
-    color: var(--gray-scale-gray-900);
+    color: var(--gray-scale-gray-900); */
 }
 .subscribe {
-    position: absolute;
+    /* position: absolute;
     height: 32.1%;
     width: 27.92%;
     top: 33.95%;
@@ -91,23 +96,25 @@
     bottom: 33.95%;
     left: 44.79%;
     font-size: var(--body-medium-body-medium-400-size);
-    color: #808080;
+    color: #808080; */
 }
 .socialMediaIcon4 {
-    position: relative;
+    /* position: relative;
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    object-fit: cover; */
+    display: flex;
+    gap:2rem;
 }
 .socialMediaIcon5 {
-    position: relative;
+    /* position: relative;
     border-radius: var(--br-481xl);
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    object-fit: cover; */
 }
 .socialMediaParent {
-    position: absolute;
+    /* position: absolute;
     height: 24.69%;
     width: 9.58%;
     top: 37.65%;
@@ -118,16 +125,23 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 8px; */
+    display: flex;
+    gap:1rem;
 }
 .subscribeOurNewsletter1 {
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    /* width: 100%;
     border-radius: 10px;
     height: 162px;
     text-align: left;
     font-size: var(--body-xxl-body-xxl-600-size);
     color: var(--gray-scale-gray-900);
-    font-family: var(--body-medium-body-medium-400);
+    font-family: var(--body-medium-body-medium-400); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:2rem 0 2rem 0;
+    margin-top:2rem;
 }
 

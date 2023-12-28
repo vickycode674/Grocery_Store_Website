@@ -35,7 +35,7 @@ const NavigationBox = () => {
   };
 
   return (
-    <div className="dark:bg-[#535353] text-black dark:text-white border-2 rounded-lg m-2 md:mr-3">
+    <div className=" text-black border-2 rounded-lg m-2 md:mr-3">
       <h3 className="font-medium text-xl pt-5 pl-6 ">Navigation</h3>
       <div className="flex flex-col py-5">
         <NavLink
