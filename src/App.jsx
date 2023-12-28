@@ -10,6 +10,9 @@ import Home from "./Components/pages/Home";
 import Main from './Components/Contact/Main'
 import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
+import SignIn from "./Components/SignIn/SignIn";
+import Shop1 from './Components/Shop/MainShop/Shop1'
+import Footer from "./Components/Homepage/Group";
 
 
 const App = () => {
