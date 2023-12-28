@@ -11,6 +11,7 @@ import Logo2 from "../images/Traceworks.png";
 import { BiSearch } from "react-icons/bi";
 import { GoHeart } from "react-icons/go";
 import { SlHandbag } from "react-icons/sl";
+import { TbSunMoon } from "react-icons/tb";
 
 const Header = () => {
   const { theme, setThemeMode } = useContext(ThemeContext);
@@ -40,14 +41,16 @@ const Header = () => {
           </button>
         </div>
         <div className="flex gap-4">
+          <TbSunMoon className="text-2xl" />
+          <span className="border-r-2"></span>
           <GoHeart className="text-2xl" />
           <span className="border-r-2"></span>
-            <span className="relative">
-              <SlHandbag className="text-2xl absolute" />
-              <span className=" bg-[#FF6316] px-2 py-0.5 text-white rounded-full absolute -mt-5 ml-3 text-sm">
-                {count}
-              </span>
+          <span className="relative">
+            <SlHandbag className="text-2xl absolute" />
+            <span className=" bg-[#FF6316] px-2 py-0.5 text-white rounded-full absolute -mt-5 ml-3 text-sm">
+              {count}
             </span>
+          </span>
         </div>
       </div>
       {/* <Navbar
