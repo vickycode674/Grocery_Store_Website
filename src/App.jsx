@@ -10,6 +10,7 @@ import Home from "./Components/pages/Home";
 import Main from './Components/Contact/Main'
 import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
+import SignIn from "./Components/SignIn/SignIn";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
