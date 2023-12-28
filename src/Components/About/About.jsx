@@ -18,11 +18,11 @@ const About = () => {
 
         <div>
 
-            <div className='relative w-[1364px] h-[492px] ml-40 mt-20'>
+            <div className='relative w-[1164px] h-[492px] ml-40 mt-20 overflow-x-hidden'>
 
                 <p className='absolute w-[607px] top-[36px] text-#000000 text-5xl font-bold text-left'>100% Trusted <br />Organic Food Store</p>
 
-                <p className="absolute w-[590px] top-[180px] justify left-0 font-body-large-body-large-400 font-[number:var(--body-large-body-large-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-large-body-large-400-font-size)] tracking-[var(--body-large-body-large-400-letter-spacing)] leading-[var(--body-large-body-large-400-line-height)] [font-style:var(--body-large-body-large-400-font-style)] text-left">
+                <p className="absolute w-[390px] top-[180px] justify left-0 font-body-large-body-large-400 font-[number:var(--body-large-body-large-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-large-body-large-400-font-size)] tracking-[var(--body-large-body-large-400-letter-spacing)] leading-[var(--body-large-body-large-400-line-height)] [font-style:var(--body-large-body-large-400-font-style)] text-left">
                     Welcome to our Organic Vegetable Store, where taste meets purity! We take pride in offering a curated selection of 100% organic
                     vegetables that not only nourish your body but also tantalize your taste buds with unrivaled flavors. From vibrant tomatoes to crisp
                     leafy greens, our commitment to organic farming practices
@@ -33,7 +33,7 @@ const About = () => {
             </div>
 
 
-            <div className="w-[820px] h-[985px]  top-4 relative">
+            <div className="w-[820px] h-[985px]  top-4 relative ">
                 <div className=" w-[1545px] h-[1485px] top-1 object-cover  [background:linear-gradient(180deg,rgb(249.9,249.9,249.9)_0%,rgb(255,255,255)_100%)]">
                     <img className=" w-[725px] h-[585px] top-0 left-0 object-cover absolute " alt="Bg" src={BG} />
                     <img className=" w-[545px] h-[585px] top-0 left-0   absolute" alt="Image" src={About2} />

@@ -1,24 +1,18 @@
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
-import About from "./Components/About/About";
-import Dashboard from "./Components/Dashboard/Dashboard";
-import Settings from "./Components/Dashboard/Settings/Settings";
-import OrderDetails from "./Components/Dashboard/Order/OrderDetails";
-import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
+// import About from "./Components/About/About";e
+// import Dashboard from "./Components/Dashboard/Dashboard";
+// import Settings from "./Components/Dashboard/Settings/Settings";
+// import OrderDetails from "./Components/Dashboard/Order/OrderDetails";
+// import OrderHistory from "./Components/Dashboard/Order/OrderHistory";
 
-
+import Shop1 from "./Components/Shop/MainShop/Shop1";
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<VegProducts />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/setting" element={<Settings />} />
-        <Route path="/order-details" element={<OrderDetails />} />
-        <Route path="/order-history" element={<OrderHistory />} />
-      </Routes>
-    </div>
+      <div>
+            <Shop1/>
+            {/* <About/> */}
+      </div>
   );
 };
 
