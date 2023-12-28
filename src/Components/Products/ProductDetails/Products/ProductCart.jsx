@@ -24,7 +24,7 @@ const ProductCart = () => {
             >
               <CgMathMinus />
             </p>
-            <p className="text-sm md:text-lg dark:text-white">{count}</p>
+            <p className="text-sm md:text-lg ">{count}</p>
             <p
               onClick={handleAdd}
               className="bg-[#F2F2F2] rounded-3xl px-2 py-2 text-sm md:text-lg"
@@ -44,16 +44,16 @@ const ProductCart = () => {
         </p>
       </div>
       <div>
-        <p className="text-black-600 mb-2 dark:text-white leading-5 grow whitespace-nowrap">
+        <p className="text-black-600 mb-2 leading-5 grow whitespace-nowrap">
           Categories:
-          <span className="text-[#808080] dark:text-white">Vegetables</span>
+          <span className="text-[#808080] ">Vegetables</span>
         </p>
 
-        <p className="dark:text-white flex gap-1.5 mt-3">
+        <p className=" flex gap-1.5 mt-3">
           Tag:
-          <span className="text-gray-600 dark:text-white">
+          <span className="text-gray-600">
             Vegetables Healthy  <span> </span>
-            <span className="text-[rgba(0,0,0)] underline decoration-solid dark:text-white">
+            <span className="text-[rgba(0,0,0)] underline decoration-solid">
                Chinese<span> </span>
             </span>
             Cabbage Green Cabbage

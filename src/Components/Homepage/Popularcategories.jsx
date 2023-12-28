@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./popularcategories.module.css"
-import Listofitems from "./listofitems"
+import Listofitems from "../Homepage/Listofitems"
 const popularcategories = () => {
   return (
     <div class="container" >
