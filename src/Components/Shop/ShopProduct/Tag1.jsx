@@ -1,5 +1,5 @@
 // Import necessary dependencies
-import { text } from "@fortawesome/fontawesome-svg-core";
+// import { text } from "@fortawesome/fontawesome-svg-core";
 import PropTypes from "prop-types";
 // import React from "react";
 
