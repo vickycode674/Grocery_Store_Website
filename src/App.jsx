@@ -18,13 +18,13 @@ import Page from "./Components/Faq/Page"
 
 // import Footer from "./Components/Homepage/Group";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
-import Bottam from "./Components/Homepage/Bottam"
-import Footer from "./Components/Homepage/Footer";
-import Page from "./Components/Faq/Page"
+import Bottam from "./Components/Homepage/Bottam";
+// import Footer from "./Components/Homepage/Footer";
+// import Page from "./Components/Faq/Page"
 
 // import Footer from "./Components/Homepage/Group";
-import CreateAccount from "./Components/CreateAccount/CreateAccount";
-import Bottam from "./Components/Homepage/Bottam"
+// import CreateAccount from "./Components/CreateAccount/CreateAccount";
+// import Bottam from "./Components/Homepage/Bottam"
 
 // >>>>>>> f98f1276345efdef48172c02dbbde2a35cac3d3d
 
