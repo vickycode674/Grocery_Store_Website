@@ -27,19 +27,26 @@ const Header = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      <div className="flex sticky justify-around items-center m-6 w-[95%]">
-        <img src={Logo2} className="w-[300px]" />
+
+  <div className="flex  justify-around items-center m-6 w-[95%]">
+    <img src={Logo2} className="w-[300px]" />
 =======
+=======
+
+      <div className="flex  justify-around items-center m-6 w-[95%]">
+      <img src={Logo2} className="w-[300px]" />
+
+
       <div
-        className={`${
-          darkMode
+        className={`${darkMode
             ? "bg-black flex p-5 w-[100%] justify-around items-center"
             : "flex justify-around items-center m-6 w-[95%]"
-        }`}
+          }`}
       >
-        <img src={`${darkMode?darkmodeLogo:Logo2}`} className="w-[300px]" />
->>>>>>> 1bde50f61e5d9b9173d521979461353c990904f6
+        <img src={`${darkMode ? darkmodeLogo : Logo2}`} className="w-[300px]" />
+
+
+
         <div className="flex border-2 items-center rounded-lg">
           <BiSearch
             className={`${
@@ -82,8 +89,8 @@ const Header = () => {
             <p className={`${darkMode?"text-white text-sm font-medium":"text-black text-sm font-medium"}`}>$100.00</p>
           </div>
         </div>
-      </div>
-      {/* <Navbar
+      </div >
+{/* <Navbar
         collapseOnSelect
         expand="md"
         variant={darkMode ? "dark" : "light"}

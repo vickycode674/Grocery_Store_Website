@@ -12,14 +12,21 @@ import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
 import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
-<<<<<<< HEAD
+
 import Footer from "./Components/Homepage/Footer";
 import Page from "./Components/Faq/Page"
-=======
-import Footer from "./Components/Homepage/Group";
+
+// import Footer from "./Components/Homepage/Group";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Bottam from "./Components/Homepage/Bottam"
->>>>>>> 1bde50f61e5d9b9173d521979461353c990904f6
+import Footer from "./Components/Homepage/Footer";
+import Page from "./Components/Faq/Page"
+
+// import Footer from "./Components/Homepage/Group";
+import CreateAccount from "./Components/CreateAccount/CreateAccount";
+import Bottam from "./Components/Homepage/Bottam"
+
+// >>>>>>> f98f1276345efdef48172c02dbbde2a35cac3d3d
 
 const App = () => {
   return (
