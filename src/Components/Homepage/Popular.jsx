@@ -10,7 +10,7 @@ import Whishlist from "../images/product10/Heart.svg";
 import Eye from "../images/product10/Eye 1.svg"
 const HotDeals = () => {
   	return (
-    		<div className={styles.hotDeals} style={{height:'390px'}}>
+    		<div className={styles.hotDeals} style={{height:'380px'}}>
       			<div className={styles.heading}>
         				<div className={styles.popularCategories}>Popular Products</div>
         				<div className={styles.button}>

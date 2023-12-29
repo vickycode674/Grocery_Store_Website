@@ -10,8 +10,6 @@ import Image7 from "../images/image 1 (7).png"
 import Image8 from "../images/image 1 (8).png"
 import Image9 from "../images/image 1 (9).png"
 import Image10 from "../images/image 1 (10).png"
-import Image11 from "../images/image 1 (11).png"
-import Image12 from "../images/image 1 (12).png"
 import Group from "../images/Group.svg"
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
@@ -59,7 +57,7 @@ const PopularCategories = () => {
       			</div>
       			<div className={styles.category9}>
         				<img className={styles.image1Icon} alt="" src={Image10}/>
-        				<div className={styles.freshFruit}style={{width:'132px'}}>Dish Detergents</div>
+        				<div className={styles.freshFruit}style={{width:'132px',height:'30px'}}>Dish Detergents</div>
       			</div>
       		
       			

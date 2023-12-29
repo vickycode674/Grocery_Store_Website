@@ -37,7 +37,10 @@ const home = () => {
       <Instagram />
       {/* <SubscribeOurNewsletter /> */}
       {/* <Group /> */}
+<<<<<<< HEAD
      {/*} <Bottam /> */}
+=======
+>>>>>>> 1bde50f61e5d9b9173d521979461353c990904f6
       </ThemeProvider>
    
   );

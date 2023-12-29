@@ -65,6 +65,7 @@
 .greenApple {
     position: relative;
     line-height: 150%;
+    color: aliceblue;
     display: inline-block;
     width: 240px;
 }
@@ -160,12 +161,12 @@
 .product5n {
     position: absolute;
     top: 59.5px;
-    left: 10px;
+    left: 24px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
     width: 265px;
-    height: 328px;
+    height: 280px;
 }
 .price1 {
     flex-shrink: 0;
@@ -179,17 +180,17 @@
 .product5n1 {
     position: absolute;
     top: 59.5px;
-    left: 300.5px;
+    left: 289px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
     width: 265px;
-    height: 328px;
+    height: 280px;
 }
 .product5n2 {
     position: absolute;
     top: 386.5px;
-    left: 288.5px;
+    left: 298.5px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
@@ -209,7 +210,7 @@
 .product5n4 {
     position: absolute;
     top: 386.5px;
-    left: 590.5px;
+    left: 580.5px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
@@ -219,12 +220,12 @@
 .product5n5 {
     position: absolute;
     top: 59.5px;
-    left: 910.5px;
+    left: 849px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
     width: 265px;
-    height: 328px;
+    height: 280px;
 }
 .product5n6 {
     position: absolute;
@@ -285,13 +286,13 @@
 .product5n9 {
     position: absolute;
     top: 59.5px;
-    left: 588.5px;
+    left: 554px;
     background-color: var(--color-white);
     box-shadow: var(--hover-shadow);
     border: 1px solid var(--color-white);
     box-sizing: border-box;
-    width: 265px;
-    height: 328px;
+    width: 295px;
+    height: 280px;
     color: var(--color-white);
 }
 .hotDeals {
