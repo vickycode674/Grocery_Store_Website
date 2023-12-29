@@ -13,6 +13,7 @@ import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter
 import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
 import Footer from "./Components/Homepage/Group";
+import CreateAccount from "./Components/CreateAccount/CreateAccount";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/createAccount" element={<CreateAccount />} />
         <Route path='/shop' element={<Shop1/>}/>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
