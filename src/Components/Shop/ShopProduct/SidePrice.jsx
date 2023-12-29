@@ -1,6 +1,7 @@
 // import React from "react";
 import { Heading } from "./Heading";
 import VectorUp from "../Images/Vectorup.png";
+import { useState } from "react";
 export const SidePrice = () => {
   return (
     <div className="flex-col gap-[30px] pt-0 pb-[24px] px-0 relative mt-28 ">
@@ -24,3 +25,65 @@ export const SidePrice = () => {
     </div>
   );
 };
+// export const SidePrice = () => {
+//   const [minValue, setMinValue] = useState(0);
+//   const [maxValue, setMaxValue] = useState(100);
+
+//   const handleMinChange = (e) => {
+//     const value = parseInt(e.target.value, 10);
+//     setMinValue(value);
+//   };
+
+//   const handleMaxChange = (e) => {
+//     const value = parseInt(e.target.value, 10);
+//     setMaxValue(value);
+//   };
+
+//   const minHandleStyle = {
+//     left: `${((minValue - 0) / (100 - 0)) * 100}%`,
+//   };
+
+//   const maxHandleStyle = {
+//     left: `${((maxValue - 0) / (100 - 0)) * 100}%`,
+//   };
+
+//   return (
+//     <div className="relative h-[18px] mt-4">
+//       <div className="absolute w-10 h-[6px] top-[6px] left-0 bg-gray-100 rounded-[15px] ml-8" />
+//       <div
+//         className="absolute h-[6px] top-[6px] bg-brandingsuccess rounded-[15px] ml-5 w-10"
+//         style={{
+//           width: `${((maxValue - minValue) / (100 - 0)) * 18}%`,
+//           left: `${((minValue - 0) / (100 - 0)) * 18}%`,
+//         }}
+//       />
+//       <div
+//         className="absolute w-[18px] h-[18px] top-0 bg-gray-scalewhite rounded-[9px] border-2 border-solid border-brandingsuccess ml-5"
+//         style={minHandleStyle}
+//       />
+//       <div
+//         className="absolute w-[18px] h-[18px] top-0 bg-gray-scalewhite rounded-[9px] border-2 border-solid border-brandingsuccess ml-5"
+//         style={maxHandleStyle}
+//       />
+//       <input
+//         type="range"
+//         min="0"
+//         max="100"
+//         value={minValue}
+//         onChange={handleMinChange}
+//         className="absolute invisible"
+//       />
+//       <input
+//         type="range"
+//         min="0"
+//         max="100"
+//         value={maxValue}
+//         onChange={handleMaxChange}
+//         className="absolute invisible"
+//       />
+      
+//     </div>
+//   );
+// };
+
+// export default PriceSlider;

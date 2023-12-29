@@ -18,7 +18,7 @@ const About = () => {
 
         <div>
 
-            <div className='relative w-[1164px] h-[492px] ml-40 mt-20 overflow-x-hidden'>
+            <div className='relative w-[1164px] h-[492px] ml-40 mt-20 '>
 
                 <p className='absolute w-[607px] top-[36px] text-#000000 text-5xl font-bold text-left'>100% Trusted <br />Organic Food Store</p>
 
@@ -34,8 +34,8 @@ const About = () => {
 
 
             <div className="w-[820px] h-[985px]  top-4 relative ">
-                <div className=" w-[1545px] h-[1485px] top-1 object-cover  [background:linear-gradient(180deg,rgb(249.9,249.9,249.9)_0%,rgb(255,255,255)_100%)]">
-                    <img className=" w-[725px] h-[585px] top-0 left-0 object-cover absolute " alt="Bg" src={BG} />
+                <div className=" w-screen]  top-1 object-cover  [background:linear-gradient(180deg,rgb(249.9,249.9,249.9)_0%,rgb(255,255,255)_100%)]">
+                    <img className=" w-screen h-[585px] top-0 left-0 object-cover absolute " alt="Bg" src={BG} />
                     <img className=" w-[545px] h-[585px] top-0 left-0   absolute" alt="Image" src={About2} />
 
                     <p className=" absolute w-[607px] top-[4px] text-#000000 text-5xl font-bold  left-[95%] ">100% Trusted <br />Organic Food Store</p>
@@ -45,7 +45,7 @@ const About = () => {
                         luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.
                     </p>
 
-                    <div className="grid-cols-2 ">
+                    <div className="grid-cols-2  w-screen">
                         <div>
                             <div className="inline-flex flex-wrap gap-[1px]  bg-gray-scalewhite relative left-[48%]  mt-[17%] ">
                                 <div className=" inline-flex flex-col items-start p-[20px] relative bg-[#00b2061a] rounded-[1000px]">
@@ -149,11 +149,14 @@ const About = () => {
                         {/* part 3 delivery agent */}
                     </div>
                 </div>
-                <WeDelvieredYou />
-                <Team />
-                <Testimonial1 />
+        
+                {/* <Team />
+                <Testimonial1 /> */}
 
             </div>
+            <WeDelvieredYou />
+            <Team />
+            <Testimonial1 /> 
         </div>
 
 

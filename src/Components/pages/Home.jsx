@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Com from "../Homepage/Com";
 import Featured from "../Homepage/Feature";
 import ListofItems from "../Homepage/Listofitems";
@@ -10,9 +10,9 @@ import Popular from "../Homepage/Popular";
 import LatestNews from "../Homepage/LatestNews";
 import Testimonials from "../Homepage/Testimonials";
 import Instagram from "../Homepage/FollowUsOnInstagram";
-import SubscribeOurNewsletter from "../Homepage/SubscribeOurNewsletter";
-import Group from "../Homepage/Group";
-import Bottam from "../Homepage/Bottam";
+// import SubscribeOurNewsletter from "../Homepage/SubscribeOurNewsletter";
+// import Group from "../Homepage/Group";
+// import Bottam from "../Homepage/Bottam";
 import { ThemeProvider } from "../GlobalComponents/ThemeProvider";
 
 const home = () => {
@@ -37,6 +37,7 @@ const home = () => {
       <Instagram />
       {/* <SubscribeOurNewsletter /> */}
       {/* <Group /> */}
+
       </ThemeProvider>
    
   );
