@@ -15,6 +15,11 @@ import Shop1 from './Components/Shop/MainShop/Shop1'
 import Footer from "./Components/Homepage/Footer";
 import Page from "./Components/Faq/Page"
 
+// import Footer from "./Components/Homepage/Group";
+import CreateAccount from "./Components/CreateAccount/CreateAccount";
+import Bottam from "./Components/Homepage/Bottam"
+
+
 const App = () => {
   return (
     <div>
@@ -25,6 +30,7 @@ const App = () => {
         <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/createAccount" element={<CreateAccount />} />
         <Route path='/shop' element={<Shop1/>}/>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/setting" element={<Settings />} />
@@ -35,6 +41,7 @@ const App = () => {
       </Routes>
       <SubscribeOurNewsletter/>
       <Footer/>
+      <Bottam/>
     </div>
 
   );

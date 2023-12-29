@@ -29,7 +29,7 @@
 .category1 {
     position: absolute;
     top: 69px;
-    left: -1px;
+    left: 10px;
     border-radius: var(--br-8xs);
     background-color: var(--gray-scale-white);
     border: 1px solid var(--gray-scale-gray-100);
@@ -43,7 +43,7 @@
 .category2 {
     position: absolute;
     top: 306px;
-    left: -1px;
+    left: 10px;
     border-radius: var(--br-8xs);
     background-color: var(--gray-scale-white);
     border: 1px solid var(--gray-scale-gray-100);
@@ -231,9 +231,9 @@
     background-color: #ffffff;
     border-radius: 5px;
     position: relative;
-    width: 88%;
-    left: 75px;
-    height: 520px;
+    width: 85%;
+    left: 85px;
+    height: 570px;
     text-align: center;
     font-size: var(--body-large-body-large-500-size);
     color: var(--gray-scale-gray-900);

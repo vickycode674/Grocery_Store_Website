@@ -37,7 +37,9 @@ const home = () => {
       <Instagram />
       {/* <SubscribeOurNewsletter /> */}
       {/* <Group /> */}
+
      {/*} <Bottam /> */}
+
       </ThemeProvider>
    
   );

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function MyComponent(props) {
+function MyComponent() {
   return (
     <>
       
@@ -88,7 +88,6 @@ function MyComponent(props) {
     
       <style jsx>{`
         .div {
-            
           gap: 20px;
           display: flex;
         }
@@ -105,8 +104,8 @@ function MyComponent(props) {
           line-height: normal;
           width: 67%;
           height:550px;
-          margin-top: 120px;
-          margin-left: 0px;
+          margin-top: 80px;
+          margin-left: 10px;
         }
         @media (max-width: 991px) {
           .column {
@@ -267,7 +266,8 @@ function MyComponent(props) {
           flex-direction: column;
           line-height: normal;
           width: 33%;
-          margin-left: 20px;
+          margin-top:-30px;
+          margin-right: 20px;
         }
         @media (max-width: 991px) {
           .column-2 {
