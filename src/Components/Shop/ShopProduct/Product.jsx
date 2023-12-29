@@ -62,7 +62,7 @@ export const Product = ({ property1, image = "image.png", text = "Green Apple", 
             </div>
             <Price className="!flex-[0_0_auto]" hasDiv={["default", "hover"].includes(property1) ? false : undefined} property1="sale" />
           </div>
-          <div className="flex-row">
+          <div className=" inline-flex">
           <img className="flex-[0_0_auto] relative" alt="Rating" src={property1 === "sales" ? {star}: property1 === "hover" ? {star}: rating} />
           <img className="flex-[0_0_auto] relative" alt="Rating" src={property1 === "sales" ? {star}: property1 === "hover" ? {star} : rating} />
           <img className="flex-[0_0_auto] relative" alt="Rating" src={property1 === "sales" ? {star} : property1 === "hover" ? {star} : rating} />

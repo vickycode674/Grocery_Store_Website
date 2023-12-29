@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-around items-center m-6 w-[95%]">
+      <div className="flex sticky justify-around items-center m-6 w-[95%]">
         <img src={Logo2} className="w-[300px]" />
         <div className="flex border-2 items-center rounded-lg">
           <BiSearch className="text-2xl ml-2 mt-0.5" />

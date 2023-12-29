@@ -32,7 +32,7 @@ export const TestimonialsCard = ({
                 
                     <div>
                     {[1, 2, 3, 4, 5].map((index) => (
-                        <img className="relative flex-[0_0_auto]" alt="Rating" src={rating} />
+                        <img className="inline-flex" alt="Rating" src={rating} />
                         ))}
                     </div>
          

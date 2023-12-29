@@ -12,8 +12,8 @@ import Header from './Components/Homepage/Header'
 import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter";
 import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
-import Footer from "./Components/Homepage/Group";
-
+import Footer from "./Components/Homepage/Footer";
+import Page from "./Components/Faq/Page"
 
 const App = () => {
   return (
@@ -30,6 +30,8 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
+        <Route path="/faq" element={<Page />} />
+
       </Routes>
       <SubscribeOurNewsletter/>
       <Footer/>

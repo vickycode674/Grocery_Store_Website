@@ -6,9 +6,9 @@ import delivery from "./Images/delivery.png";
 
 export const WeDelvieredYou = () => {
     return (
-        <div className="relative w-[1476px] h-[116px] top-[-878px] left-[20%] ">
-            <div className="absolute w-[556px] h-[431px] top-[80px] left-0 text-left">
-                <p className="absolute w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
+        <div className="relative w-screen top-[-378px] left-[10%] ">
+            <div className="relative w-screen h-[211px] top-[80px] left-0 text-left">
+                <p className="relative w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
                     We Deliver, <br/> You Enjoy Your Order.
                 </p>
                 <p className="absolute w-[536px] top-[160px]  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)]">
@@ -61,7 +61,7 @@ export const WeDelvieredYou = () => {
                     <img className="relative w-[16.5px] h-[13.55px] mr-[-0.75px]" alt="Group" src={group1} />
                 </button>
             </div>
-            <img className="absolute w-[815px] h-[580px] top-0 left-[590px]" alt="Image" src={delivery} />
+            <img className="absolute w-[815px] h-[580px] top-0 left-[690px]" alt="Image" src={delivery} />
         </div>
     );
 };
