@@ -14,7 +14,7 @@ import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
 import Footer from "./Components/Homepage/Group";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
-
+import Bottam from "./Components/Homepage/Bottam"
 
 const App = () => {
   return (
@@ -35,6 +35,7 @@ const App = () => {
       </Routes>
       <SubscribeOurNewsletter/>
       <Footer/>
+      <Bottam/>
     </div>
 
   );

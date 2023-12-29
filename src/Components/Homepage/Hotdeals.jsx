@@ -1,7 +1,6 @@
 import styles from './HotDeals.module.css';
 import Star1 from "../images/product1/Star 1.svg";
 import Bag from "../images/product1/Bag.svg";
-import Contai from "../images/product1/Container.svg";
 import Group from "../images/Group.svg"
 import Image from "../images/product1/Image.png";
 import Image2 from "../images/product2/Image.png"
@@ -10,8 +9,6 @@ import Image4 from "../images/product4/Image (1).png";
 import Image5 from "../images/product5/Image (2).png";
 import Image6 from "../images/product6/Image (3).png";
 import Image7 from "../images/product7/Image.png";
-import Image8 from "../images/product8/Image.png";
-import Image9 from "../images/product9/Image.png";
 import Image10 from "../images/product10/Image.png";
 import Whishlist from "../images/product10/Heart.svg";
 import Eye from "../images/product10/Eye 1.svg"

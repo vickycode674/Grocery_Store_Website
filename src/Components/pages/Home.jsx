@@ -35,9 +35,8 @@ const home = () => {
       <br></br>
       <Testimonials />
       <Instagram />
-      <SubscribeOurNewsletter />
-      <Group />
-      <Bottam />
+      {/* <SubscribeOurNewsletter /> */}
+      {/* <Group /> */}
       </ThemeProvider>
    
   );

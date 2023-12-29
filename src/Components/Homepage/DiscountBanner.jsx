@@ -1,6 +1,5 @@
 import styles from './DiscountBannar.module.css';
-import Banner from "../images/Discount Bannar.png";
-import Group from "../images/Group.svg"
+import Group from "../images/banner/Groupwhite.svg"
 
 const DiscountBannar = () => {
   	return (

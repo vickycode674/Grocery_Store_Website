@@ -179,7 +179,7 @@
 .product5n1 {
     position: absolute;
     top: 59.5px;
-    left: 300.5px;
+    left: 289px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
@@ -219,7 +219,7 @@
 .product5n5 {
     position: absolute;
     top: 59.5px;
-    left: 910.5px;
+    left: 906.5px;
     background-color: var(--color-white);
     border: 1px solid var(--gray-scale-gray-100);
     box-sizing: border-box;
@@ -285,7 +285,7 @@
 .product5n9 {
     position: absolute;
     top: 59.5px;
-    left: 588.5px;
+    left: 590.5px;
     background-color: var(--color-white);
     box-shadow: var(--hover-shadow);
     border: 1px solid var(--color-white);

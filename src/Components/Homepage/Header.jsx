@@ -1,12 +1,10 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+
 import { ThemeContext } from "../GlobalComponents/ThemeProvider";
-import { BiSun, BiMoon, BiCart } from "react-icons/bi";
+
 // import { VscAccount } from 'react-icons/vsc';
-import { Col, InputGroup, FormControl } from "react-bootstrap";
-import { Link } from "react-router-dom";
 // import { useCart } from "react-use-cart";
-import Logo from "../images/Traceworks Trademarked Logo 1 (1).png";
+
 import Logo2 from "../images/Traceworks.png";
 import { BiSearch } from "react-icons/bi";
 import { GoHeart } from "react-icons/go";
@@ -25,10 +23,7 @@ const Header = () => {
     console.log(darkMode);
   }, [darkMode]);
 
-  // const {
-  //     isEmpty,
-  //     totalItems,
-  // } = useCart();
+
 
   return (
     <>
