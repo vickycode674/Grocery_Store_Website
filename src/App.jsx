@@ -1,4 +1,3 @@
-
 import { Route, Routes } from "react-router-dom";
 import About from "./Components/About/About";
 import Dashboard from "./Components/Dashboard/Dashboard";
@@ -20,17 +19,23 @@ import Page from "./Components/Faq/Page"
 // import Footer from "./Components/Homepage/Footer";
 // import Page from "./Components/Faq/Page"
 
+
+import Footer from "./Components/Homepage/Group";
+
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Bottam from "./Components/Homepage/Bottam"
-
-// >>>>>>> f98f1276345efdef48172c02dbbde2a35cac3d3d
-
+import Whishlist from "./Components/Wishlist/container"
+import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
+import CheckOutpage from "./Components/Checkout/checkOutpage";
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/whishlist" element={<Whishlist />} />
+        <Route path="/shoppingpage" element={<ShoppingPage />} />
+        <Route path="/checkoutpage" element={<CheckOutpage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Main />} />
         <Route path="/products" element={<VegProducts />} />
@@ -41,14 +46,14 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
-        {/* <Route path="/faq" element={<Page />} /> */}
+ <Route path="/faq" element={<Page />} />
+
 
       </Routes>
       <SubscribeOurNewsletter/>
-      {/* <Footer/> */}
+       <Footer/> 
       <Bottam/>
     </div>
-
   );
 };
 

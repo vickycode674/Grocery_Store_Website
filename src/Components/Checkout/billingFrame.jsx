@@ -3,7 +3,7 @@ import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
 const BillingFrame = () => {
     const [theme] = useThemeHook()
-  	return (
+  return (
       <div className={styles.groupParent} style={{ border: `2px solid ${theme ? 'black' : 'white'}`, padding: '10px' }}>
         <div className={styles.phoneParent}>
           <div className={styles.phone}>
