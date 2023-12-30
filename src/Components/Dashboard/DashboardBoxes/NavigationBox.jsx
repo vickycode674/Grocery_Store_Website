@@ -6,6 +6,7 @@ import { GoHeart } from "react-icons/go";
 import { SlHandbag } from "react-icons/sl";
 import { LuSettings } from "react-icons/lu";
 import { IoLogOutOutline } from "react-icons/io5";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const NavigationBox = () => {
   const [active, setActive] = useState({
@@ -18,6 +19,8 @@ const NavigationBox = () => {
     "/setting": location.pathname === "/setting",
     "/logout": location.pathname === "/logout",
   });
+
+  const [theme] = useThemeHook();
 
   const handleNavLinkClick = (path) => {
     setActive((prevData) => ({
@@ -35,8 +38,16 @@ const NavigationBox = () => {
   };
 
   return (
-    <div className=" text-black border-2 rounded-lg m-2 md:mr-3">
-      <h3 className="font-medium text-xl pt-5 pl-6 ">Navigation</h3>
+    <div
+      className=" text-black border-2 rounded-lg m-2 md:mr-3"
+      style={{ backgroundColor: theme ? "#2A2C38" : "" }}
+    >
+      <h3
+        className="font-medium text-xl pt-5 pl-6 "
+        style={{ color: theme ? "#fff" : "" }}
+      >
+        Navigation
+      </h3>
       <div className="flex flex-col py-5">
         <NavLink
           onClick={() => handleNavLinkClick("/dashboard")}
@@ -44,8 +55,11 @@ const NavigationBox = () => {
           className="px-10 py-3 mb-2 flex items-center gap-2"
           to="/dashboard"
         >
-          <MdDashboard className="text-xl" />
-          Dashboard
+          <MdDashboard
+            className="text-xl"
+            style={{ color: theme ? "#fff" : "" }}
+          />
+          <p style={{ color: theme ? "#fff" : "" }}>Dashboard</p>
         </NavLink>
         <NavLink
           onClick={() =>
@@ -55,8 +69,11 @@ const NavigationBox = () => {
           className="px-10 py-2 mb-2 flex items-center gap-2"
           to="/order-history"
         >
-          <BsArrowRepeat className="text-xl" />
-          Order History
+          <BsArrowRepeat
+            className="text-xl"
+            style={{ color: theme ? "#fff" : "" }}
+          />
+          <p style={{ color: theme ? "#fff" : "" }}> Order History</p>
         </NavLink>
         <NavLink
           onClick={() => handleNavLinkClick("/wishlist")}
@@ -64,8 +81,8 @@ const NavigationBox = () => {
           className="px-10 py-2 mb-2 flex items-center gap-2"
           to="/wishlist"
         >
-          <GoHeart className="text-xl" />
-          Wishlist
+          <GoHeart className="text-xl" style={{ color: theme ? "#fff" : "" }} />
+          <p style={{ color: theme ? "#fff" : "" }}>Wishlist</p>
         </NavLink>
         <NavLink
           onClick={() => handleNavLinkClick("/cart")}
@@ -73,8 +90,11 @@ const NavigationBox = () => {
           to="/cart"
           className="px-10 py-2 mb-2 flex items-center gap-2"
         >
-          <SlHandbag className="text-xl" />
-          Shopping Cart
+          <SlHandbag
+            className="text-xl"
+            style={{ color: theme ? "#fff" : "" }}
+          />
+          <p style={{ color: theme ? "#fff" : "" }}>Shopping Cart</p>
         </NavLink>
         <NavLink
           className="px-10 py-2 mb-2 flex items-center gap-2"
@@ -82,8 +102,11 @@ const NavigationBox = () => {
           style={activeStyle("/setting")}
           to="/setting"
         >
-          <LuSettings className="text-xl" />
-          Settings
+          <LuSettings
+            className="text-xl"
+            style={{ color: theme ? "#fff" : "" }}
+          />
+          <p style={{ color: theme ? "#fff" : "" }}>Settings</p>
         </NavLink>
         <NavLink
           className="px-10 py-2 mb-2 flex items-center gap-2"
@@ -91,8 +114,11 @@ const NavigationBox = () => {
           style={active ? activeStyle : ""}
           to="/logout"
         >
-          <IoLogOutOutline className="text-xl" />
-          Log-out
+          <IoLogOutOutline
+            className="text-xl"
+            style={{ color: theme ? "#fff" : "" }}
+          />
+          <p style={{ color: theme ? "#fff" : "" }}> Log-out</p>
         </NavLink>
       </div>
     </div>

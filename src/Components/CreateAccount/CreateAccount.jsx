@@ -1,13 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
 
 const CreateAccount = () => {
+  const [theme] = useThemeHook();
   return (
-    <div className="flex justify-center items-center mt-16 mb-16">
+    <div
+      className="flex justify-center items-center"
+      style={{ backgroundColor: theme ? "#000000" : "" }}
+    >
       <div
-        style={{ boxShadow: "0 0 3px 0 rgba(0, 38, 3, 0.5)" }}
-        className="rounded-lg"
+        style={{
+          boxShadow: "0 0 3px 0 rgba(0, 38, 3, 0.5)",
+          backgroundColor: theme ? "#2A2C38" : "",
+        }}
+        className="rounded-lg  mt-16 mb-16"
       >
-        <h3 className="font-semibold text-3xl flex justify-center pt-3">
+        <h3
+          className="font-semibold text-3xl flex justify-center pt-3"
+          style={{ color: theme ? "#fff" : "" }}
+        >
           Create Account
         </h3>
         <div className="flex flex-col w-96">
@@ -29,7 +41,10 @@ const CreateAccount = () => {
         </div>
         <div className="flex pl-5 mb-3">
           <input type="checkbox" />
-          <p className="text-[#666666] text-sm pl-2">
+          <p
+            className="text-[#666666] text-sm pl-2"
+            style={{ color: theme ? "#fff" : "" }}
+          >
             Accept all terms & conditions
           </p>
         </div>
@@ -38,9 +53,17 @@ const CreateAccount = () => {
             Create Account
           </button>
         </div>
-        <p className="text-[#666666] text-sm flex justify-center m-3 pb-1 ">
+        <p
+          className="text-[#666666] text-sm flex justify-center m-3 pb-1 "
+          style={{ color: theme ? "#fff" : "" }}
+        >
           Already have account?
-          <span className="font-semibold text-black pl-1"> Login</span>
+          <span className="font-semibold text-black pl-1">
+            {" "}
+            <Link to="/createAccount" style={{ color: theme ? "#fff" : "" }}>
+              Login
+            </Link>
+          </span>
         </p>
       </div>
     </div>
