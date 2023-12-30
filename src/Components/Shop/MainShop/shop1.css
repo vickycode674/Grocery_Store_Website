@@ -32,7 +32,7 @@
   
   .breadcrumbs .text-wrapper {
     color: var(--gray-scalegray-400);
-    color: transparent;
+    color: black;
     font-family: var(--body-medium-body-medium-400-font-family);
     font-size: var(--body-medium-body-medium-400-font-size);
     font-style: var(--body-medium-body-medium-400-font-style);
@@ -46,7 +46,7 @@
   }
   
   .breadcrumbs .div {
-    color: transparent;  /*need changes in the respective color*/
+    color: black;  /*need changes in the respective color*/
     font-family: var(--body-medium-body-medium-400-font-family);
     font-size: var(--body-medium-body-medium-400-font-size);
     font-style: var(--body-medium-body-medium-400-font-style);
