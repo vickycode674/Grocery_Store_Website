@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const OrderBox = () => {
+  const [theme] = useThemeHook();
   const items = [
     {
       orderId: "#232",
@@ -38,7 +40,10 @@ const OrderBox = () => {
     <div className="border-2 mt-7 rounded-lg overflow-x-scroll md:overflow-hidden">
       <div>
         <div className="flex justify-between items-center">
-          <h2 className="font-medium text-xl p-3 ml-3 whitespace-nowrap">
+          <h2
+            className="font-medium text-xl p-3 ml-3 whitespace-nowrap"
+            style={{ color: theme ? "#fff" : "" }}
+          >
             Recent Order History
           </h2>
           <NavLink
@@ -60,7 +65,7 @@ const OrderBox = () => {
           </thead>
           <tbody>
             {items.map((item, id) => (
-              <tr key={id} className="text-[#333333]">
+              <tr key={id} className="text-[#333333]"  style={{ color: theme ? "#CCCCCC" : "" }}>
                 <td className=" pt-5 pl-6 pb-2">{item.orderId}</td>
                 <td className=" pt-5 pr-16 pl-5 pb-2 whitespace-nowrap">
                   {item.date}
