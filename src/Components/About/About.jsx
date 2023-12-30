@@ -8,6 +8,7 @@ import Headphones from "./Images/Headphones 1.png";
 import Package from "./Images/package.png";
 import Shoppingbag from "./Images/shopping-bag.png";
 import stars from "./Images/stars 1.png";
+import Banner from "./Images/Banner2.png";
 
 import { WeDelvieredYou } from "./WeDeliver";
 // // import { Box } from "./Box/Box1";
@@ -17,6 +18,8 @@ const About = () => {
     return (
 
         <div>
+                <img src={Banner} className="w-[98%] " alt='banner'/>
+
 
             <div className='relative w-[1164px] h-[492px] ml-40 mt-20 '>
 

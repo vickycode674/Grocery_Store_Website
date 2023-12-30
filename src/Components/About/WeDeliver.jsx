@@ -56,7 +56,7 @@ export const WeDelvieredYou = () => {
 
                 <button className="inline-flex items-center justify-center gap-[16px] px-[40px] py-[16px] absolute top-[380px] left-0 bg-brandingsuccess rounded-[43px] all-[unset] box-border">
                     <div className="relative w-fit mt-[-0.50px] font-body-medium-body-medium-600 font-[number:var(--body-medium-body-medium-600-font-weight)] text-gray-scalewhite text-[length:var(--body-medium-body-medium-600-font-size)] tracking-[var(--body-medium-body-medium-600-letter-spacing)] leading-[var(--body-medium-body-medium-600-line-height)] whitespace-nowrap [font-style:var(--body-medium-body-medium-600-font-style)]">
-                        Shop Now
+                        <a href="#" >Shop Now </a>
                     </div>
                     <img className="relative w-[16.5px] h-[13.55px] mr-[-0.75px]" alt="Group" src={group1} />
                 </button>

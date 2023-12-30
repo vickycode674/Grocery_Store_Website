@@ -4,6 +4,7 @@ import Banners from "../Images/Bannar.png";
 const Bannar = () => {
   return (
     <div >
+      <a href="#" alt="shop"> 
       <img src={Banners} className="inline-flex flex-col items-center gap-12 pt-0 pb-180 px-0 relative rounded-10  bg-cover bg-[50%_50%] ml-5"/>
       <div className="inline-flex flex-col items-center justify-center gap-2 pt-20 pb-0 px-0 relative flex-0_0_auto">
         {/* Discount percentage */}
@@ -20,6 +21,7 @@ const Bannar = () => {
           {/* on your first order */}
         </div>
       </div>
+      </a>
 
       {/* Shop Now button */}
       {/* <button className="inline-flex items-center gap-12 relative flex-0_0_auto rounded-43px all-unset box-border">

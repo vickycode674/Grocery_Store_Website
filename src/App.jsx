@@ -17,6 +17,7 @@ import Bottam from "./Components/Homepage/Bottam"
 import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
+import Page from "./Components/Faq/Page"; 
 const App = () => {
   return (
     <div>
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
+        <Route path="/faq" element={<Page/>} />
       </Routes>
       <SubscribeOurNewsletter/>
       <Footer/>

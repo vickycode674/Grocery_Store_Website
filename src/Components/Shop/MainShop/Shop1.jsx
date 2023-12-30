@@ -37,6 +37,8 @@ import Images13 from "../Images/Image-13.png";
 import Images14 from "../Images/Image-14.png";
 import Images15 from "../Images/Image-15.png";
 
+import Banner from "../Images/Banner3.png";
+
 
 
 
@@ -45,6 +47,8 @@ import Images15 from "../Images/Image-15.png";
 const Shop1 = () => {
   return (
     <div>
+          <img src={Banner} alt='banner'/>
+
       {/* <NavigationBar/> */}
       <div className="breadcrumbs"> 
       <div className="location"> 
