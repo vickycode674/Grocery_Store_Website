@@ -1,6 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import person from "../Images/person.png";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const ProfileBox = () => {
   return (

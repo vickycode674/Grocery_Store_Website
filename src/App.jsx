@@ -17,12 +17,9 @@ import Footer from "./Components/Homepage/Footer";
 import Page from "./Components/Faq/Page"
 
 // import Footer from "./Components/Homepage/Group";
-import CreateAccount from "./Components/CreateAccount/CreateAccount";
-import Bottam from "./Components/Homepage/Bottam"
-import Footer from "./Components/Homepage/Footer";
-import Page from "./Components/Faq/Page"
+// import Footer from "./Components/Homepage/Footer";
+// import Page from "./Components/Faq/Page"
 
-// import Footer from "./Components/Homepage/Group";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Bottam from "./Components/Homepage/Bottam"
 
@@ -44,11 +41,11 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
-        <Route path="/faq" element={<Page />} />
+        {/* <Route path="/faq" element={<Page />} /> */}
 
       </Routes>
       <SubscribeOurNewsletter/>
-      <Footer/>
+      {/* <Footer/> */}
       <Bottam/>
     </div>
 
