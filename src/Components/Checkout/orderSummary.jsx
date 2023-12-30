@@ -4,27 +4,27 @@ import Image2 from "./images/Image (1).png"
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 const OrderSummery = () => {
     const[theme] = useThemeHook()
-  	return (
-    		<div className={styles.orderSummery} style={{backgroundColor: theme?'':'white'}}>
-      			<div className={styles.orderSummery1}>
-        				<div className={styles.orderSummery2} style={{color: theme?'':'black'}}>Order Summery</div>
-        				<div className={styles.product}>
-          					<div className={styles.product1}>
-            						<div className={styles.info}>
-              							<img className={styles.imageIcon} alt="" src={Image1} />
-              							<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>Green Capsicum</div>
-              							<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>x5</div>
-            						</div>
-            						<div className={styles.div} style={{color: theme?'':'black'}}>$70.00</div>
-          					</div>
-          					<div className={styles.product1}>
-            						<div className={styles.info}>
-              							<img className={styles.imageIcon} alt="" src={Image2} />
-              							<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>Red Capsicum</div>
-              							<div className={styles.greenCapsicum}style={{color: theme?'':'black'}}>x1</div>
-            						</div>
-            						<div className={styles.div}style={{color: theme?'':'black'}}>$14.00</div>
-          					</div>
+return (
+<div className={styles.orderSummery} style={{ backgroundColor: theme ? '' : 'white' }}>
+<div className={styles.orderSummery1}>
+<div className={styles.orderSummery2} style={{ color: theme ? '' : 'black' }}>Order Summery</div>
+<div className={styles.product}>
+<div className={styles.product1}>
+	<div className={styles.info}>
+		<img className={styles.imageIcon} alt="" src={Image1} />
+		<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>Green Capsicum</div>
+		<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>x5</div>
+	</div>
+	<div className={styles.div} style={{color: theme?'':'black'}}>$70.00</div>
+</div>
+<div className={styles.product1}>
+	<div className={styles.info}>
+		<img className={styles.imageIcon} alt="" src={Image2} />
+		<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>Red Capsicum</div>
+		<div className={styles.greenCapsicum} style={{color: theme?'':'black'}}>x1</div>
+	</div>
+	<div className={styles.div} style={{color: theme?'':'black'}}>$14.00</div>
+</div>
         				</div>
         				<div className={styles.total}>
           					<div className={styles.subtotal} style={{backgroundColor: theme?'':'white'}}>
