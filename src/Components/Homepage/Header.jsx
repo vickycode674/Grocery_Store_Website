@@ -28,10 +28,18 @@ const Header = () => {
   return (
     <>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div className="flex  justify-around items-center md:mt-0 mr-0">
 =======
       <div className="md:flex  justify-around items-center">
 >>>>>>> 0e7ef7a68767ca7df6a6d5270b9d4d9f369df2fa
+=======
+
+      <div className="flex  justify-around items-center md:mt-0 mr-0">
+
+      <div className="md:flex  justify-around items-center">
+
+>>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
         <div
           className={`${
             darkMode
@@ -45,10 +53,17 @@ const Header = () => {
           />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="flex border-2 items-center rounded-lg mt-4 md:mt-0">
 =======
           <div className="flex border-2 w-full md:w-fit items-center rounded-lg mt-3 md:mt-0 mr-6 md:mr-0">
 >>>>>>> 0e7ef7a68767ca7df6a6d5270b9d4d9f369df2fa
+=======
+          <div className="flex border-2 items-center rounded-lg mt-4 md:mt-0">
+
+          <div className="flex border-2 w-full md:w-fit items-center rounded-lg mt-3 md:mt-0 mr-6 md:mr-0">
+
+>>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
             <BiSearch
               className={`${
                 darkMode ? "b-2 text-gray-200" : ""
@@ -62,18 +77,30 @@ const Header = () => {
               placeholder="Search..."
             />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
             <button className="bg-[#FF6316] text-white px-6 py-2 rounded-r-lg text-sm font-bold md:px-6 py-2 rounded-r-lg text-sm font-bold">
               Search
             </button>
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 ">
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
             <button className="bg-[#FF6316] text-white px-6 py-2 -ml-1 md:ml-0 rounded-r-lg text-sm font-bold">
               Search
             </button>
           </div>
           <div className="flex gap-4 mt-8 md:mt-0 ml-2 md:ml-0">
+<<<<<<< HEAD
 >>>>>>> 0e7ef7a68767ca7df6a6d5270b9d4d9f369df2fa
+=======
+
+>>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
             <TbSunMoon
               className={`${
                 darkMode ? "text-white text-3xl" : "text-black text-3xl"
