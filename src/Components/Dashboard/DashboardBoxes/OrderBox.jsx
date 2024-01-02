@@ -37,7 +37,7 @@ const OrderBox = () => {
     },
   ];
   return (
-    <div className="border-2 mt-7 rounded-lg overflow-x-scroll md:overflow-hidden">
+    <div className="border-2 mt-7 mb-2 rounded-lg overflow-x-scroll md:overflow-hidden" style={{ backgroundColor: theme ? "#535353" : "" }}>
       <div>
         <div className="flex justify-between items-center">
           <h2

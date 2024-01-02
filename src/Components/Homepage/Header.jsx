@@ -14,7 +14,6 @@ import { SlHandbag } from "react-icons/sl";
 import { TbSunMoon } from "react-icons/tb";
 import darkmodeLogo from "../Homepage/darkmodeLogo.png";
 
-
 const Header = () => {
   const { theme, setThemeMode } = useContext(ThemeContext);
   const [darkMode, setDarkMode] = useState(theme);
@@ -26,15 +25,18 @@ const Header = () => {
     console.log(darkMode);
   }, [darkMode]);
 
-
   return (
     <>
+
       <div className="flex  justify-around items-center md:mt-0 mr-0">
+
+      <div className="md:flex  justify-around items-center">
+
         <div
           className={`${
             darkMode
-              ? "bg-black flex p-5 w-[100%] justify-around items-center"
-              : "flex justify-around items-center m-6 w-[95%]"
+              ? "bg-black md:flex p-5 w-[100%] justify-around items-center"
+              : "md:flex justify-around items-center m-6 md:w-[95%]"
           }`}
         >
           <img
@@ -43,6 +45,9 @@ const Header = () => {
           />
 
           <div className="flex border-2 items-center rounded-lg mt-4 md:mt-0">
+
+          <div className="flex border-2 w-full md:w-fit items-center rounded-lg mt-3 md:mt-0 mr-6 md:mr-0">
+
             <BiSearch
               className={`${
                 darkMode ? "b-2 text-gray-200" : ""
@@ -55,11 +60,19 @@ const Header = () => {
               } w-64 outline-none`}
               placeholder="Search..."
             />
+
             <button className="bg-[#FF6316] text-white px-6 py-2 rounded-r-lg text-sm font-bold md:px-6 py-2 rounded-r-lg text-sm font-bold">
               Search
             </button>
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 ">
+
+            <button className="bg-[#FF6316] text-white px-6 py-2 -ml-1 md:ml-0 rounded-r-lg text-sm font-bold">
+              Search
+            </button>
+          </div>
+          <div className="flex gap-4 mt-8 md:mt-0 ml-2 md:ml-0">
+
             <TbSunMoon
               className={`${
                 darkMode ? "text-white text-3xl" : "text-black text-3xl"
@@ -86,7 +99,7 @@ const Header = () => {
             <div className="ml-6 -mt-3 md:ml-6 -mt-3">
               <p
                 className={`${
-                  darkMode ? "text-white text-base" : "text-[#4D5D4D] text-base"
+                  darkMode ? "text-white text-base" : "text-[#4D5D4D] text-base whitespace-nowrap"
                 }`}
               >
                 Shopping cart

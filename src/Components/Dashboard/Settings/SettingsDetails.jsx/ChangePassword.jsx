@@ -1,9 +1,10 @@
-import React from "react";
+import { useThemeHook } from "../../../GlobalComponents/ThemeProvider";
 
 const ChangePassword = () => {
+  const [theme] = useThemeHook();
   return (
-    <div className="font-poppins mt-5 m-2 md:m-0">
-      <div className="border-2 border-[#E6E6E6] rounded-lg md:w-[850px]">
+    <div className="font-poppins mt-5 m-2 md:m-0" style={{ backgroundColor: theme ? "#535353" : "" }} >
+      <div className="border-2 border-[#E6E6E6] rounded-lg  md:w-[850px]" style={{ color: theme ? "#fff" : "" }}>
         <h3 className="font-medium text-xl border-b-2 pl-6 p-2">
           Change Password
         </h3>
@@ -12,6 +13,7 @@ const ChangePassword = () => {
           <input
             type="password"
             className="border-[#E6E6E6] border-2 rounded outline-orange-600 md:w-[739px] p-2 w-[90%]"
+            style={{ backgroundColor: theme ? "#535353" : "" }} 
           />
         </div>
         <div className="md:flex">
@@ -20,6 +22,7 @@ const ChangePassword = () => {
             <input
               type="password"
               className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
+              style={{ backgroundColor: theme ? "#535353" : "" }} 
             />
           </div>
           <div className="md:w-[45%] pl-6 pt-5">
@@ -27,6 +30,7 @@ const ChangePassword = () => {
             <input
               type="password"
               className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
+              style={{ backgroundColor: theme ? "#535353" : "" }} 
             />
           </div>
         </div>
