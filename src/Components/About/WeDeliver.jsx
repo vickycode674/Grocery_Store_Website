@@ -2,16 +2,20 @@
 import check1 from "./Images/check 1.png";
 import group1 from "./Images/group1.png";
 import delivery from "./Images/delivery.png";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+
 
 
 export const WeDelvieredYou = () => {
+    const [theme] = useThemeHook()
+
     return (
         <div className="relative w-screen top-[-378px] left-[10%] ">
             <div className="relative w-screen h-[211px] top-[80px] left-0 text-left">
-                <p className="relative w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
+                <p  style={{ color: theme ? "#fff" : "" }} className="relative w-[558px]  left-0 font-heading-02-heading-02-600 font-[number:var(--heading-02-heading-02-600-font-weight)] text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] [font-style:var(--heading-02-heading-02-600-font-style)]">
                     We Deliver, <br/> You Enjoy Your Order.
                 </p>
-                <p className="absolute w-[536px] top-[160px]  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)]">
+                <p  style={{ color: theme ? "#fff" : "" }} className="absolute w-[536px] top-[160px]  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)]">
                     Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris
                     sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.
                 </p>
@@ -24,7 +28,7 @@ export const WeDelvieredYou = () => {
                                 <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1} />
                             </div>
                         </div>
-                        <div className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
+                        <div style={{ color: theme ? "#fff" : "" }}  className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
                             Sed in metus pellentesque.
                         </div>
                     </div>
@@ -36,7 +40,7 @@ export const WeDelvieredYou = () => {
                                 <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1}  />
                             </div>
                         </div>
-                        <p className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
+                        <p  style={{ color: theme ? "#fff" : "" }}  className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
                             Fusce et ex commodo, aliquam nulla efficitur, tempus lorem.
                         </p>
                     </div>
@@ -48,7 +52,7 @@ export const WeDelvieredYou = () => {
                                 <img className="absolute w-[12px] h-[12px] top-[4px] left-[4px]" alt="Check" src={check1}  />
                             </div>
                         </div>
-                        <p className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
+                        <p  style={{ color: theme ? "#fff" : "" }} className="relative w-[508px] mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-gray-scalegray-600 text-[14px] tracking-[0] leading-[19.6px]">
                             Maecenas ut nunc fringilla erat varius.
                         </p>
                     </div>

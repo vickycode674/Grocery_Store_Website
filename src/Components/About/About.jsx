@@ -9,23 +9,27 @@ import Package from "./Images/package.png";
 import Shoppingbag from "./Images/shopping-bag.png";
 import stars from "./Images/stars 1.png";
 import Banner from "./Images/Banner2.png";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+
 
 import { WeDelvieredYou } from "./WeDeliver";
 // // import { Box } from "./Box/Box1";
 import { Team } from "./Team";
 import { Testimonial1 } from "./Testimonials/Testimonial1";
 const About = () => {
+    const [theme] = useThemeHook();
+
     return (
 
-        <div>
+        <div style={{backgroundColor:theme?"black":""}}>
                 <img src={Banner} className="w-[98%] " alt='banner'/>
 
 
-            <div className='relative w-[1164px] h-[492px] ml-40 mt-20 '>
+            <div className='relative w-[1164px] h-[492px] ml-40 mt-20 ' style={{ backgroundColor: theme ? "black" : "" }}>
 
-                <p className='absolute w-[607px] top-[36px] text-#000000 text-5xl font-bold text-left'>100% Trusted <br />Organic Food Store</p>
+                <p className='absolute w-[607px] top-[36px] text-#000000 text-5xl font-bold text-left'  style={{ color: theme ? "#fff" : "" }}>100% Trusted <br />Organic Food Store</p>
 
-                <p className="absolute w-[390px] top-[180px] justify left-0 font-body-large-body-large-400 font-[number:var(--body-large-body-large-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-large-body-large-400-font-size)] tracking-[var(--body-large-body-large-400-letter-spacing)] leading-[var(--body-large-body-large-400-line-height)] [font-style:var(--body-large-body-large-400-font-style)] text-left">
+                <p  style={{ color: theme ? "#fff" : "" }} className="absolute w-[390px] top-[180px] justify left-0 font-body-large-body-large-400 font-[number:var(--body-large-body-large-400-font-weight)] text-gray-scalegray-600 text-[length:var(--body-large-body-large-400-font-size)] tracking-[var(--body-large-body-large-400-letter-spacing)] leading-[var(--body-large-body-large-400-line-height)] [font-style:var(--body-large-body-large-400-font-style)] text-left">
                     Welcome to our Organic Vegetable Store, where taste meets purity! We take pride in offering a curated selection of 100% organic
                     vegetables that not only nourish your body but also tantalize your taste buds with unrivaled flavors. From vibrant tomatoes to crisp
                     leafy greens, our commitment to organic farming practices
@@ -36,14 +40,14 @@ const About = () => {
             </div>
 
 
-            <div className="w-[820px] h-[985px]  top-4 relative ">
-                <div className=" w-screen]  top-1 object-cover  [background:linear-gradient(180deg,rgb(249.9,249.9,249.9)_0%,rgb(255,255,255)_100%)]">
-                    <img className=" w-screen h-[585px] top-0 left-0 object-cover absolute " alt="Bg" src={BG} />
+            <div className="w-[820px] h-[985px]  top-4 relative " >
+                <div className=" w-[600px]  top-1 object-cover  [background:linear-gradient(180deg,rgb(249.9,249.9,249.9)_0%,rgb(255,255,255)_100%)]">
+                    <img className=" w-[600px] h-[585px] top-0 left-0 object-cover absolute " alt="Bg" src={BG} />
                     <img className=" w-[545px] h-[585px] top-0 left-0   absolute" alt="Image" src={About2} />
 
-                    <p className=" absolute w-[607px] top-[4px] text-#000000 text-5xl font-bold  left-[95%] ">100% Trusted <br />Organic Food Store</p>
+                    <p className=" absolute w-[607px] top-[4px] text-#000000 text-5xl font-bold  left-[95%] "  style={{ color: theme ? "#fff" : "" }}>100% Trusted <br />Organic Food Store</p>
 
-                    <p className="absolute  w-[570px] top-36  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-500 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)] text-left left-[95%]">
+                    <p  style={{ color: theme ? "#fff" : "" }} className="absolute  w-[570px] top-36  font-body-medium-body-medium-400 font-[number:var(--body-medium-body-medium-400-font-weight)] text-gray-scalegray-500 text-[length:var(--body-medium-body-medium-400-font-size)] tracking-[var(--body-medium-body-medium-400-letter-spacing)] leading-[var(--body-medium-body-medium-400-line-height)] [font-style:var(--body-medium-body-medium-400-font-style)] text-left left-[95%]">
                         Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est
                         luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.
                     </p>
@@ -158,7 +162,7 @@ const About = () => {
 
             </div>
             <WeDelvieredYou />
-            <Team />
+            <Team  />
             <Testimonial1 /> 
         </div>
 

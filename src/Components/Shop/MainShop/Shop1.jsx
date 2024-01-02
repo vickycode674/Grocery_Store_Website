@@ -40,13 +40,15 @@ import Images15 from "../Images/Image-15.png";
 import Banner from "../Images/Banner3.png";
 
 
-
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 
 
 const Shop1 = () => {
+  const [theme] = useThemeHook()
+
   return (
-    <div>
+    <div style={{ background: theme ? "black" : "" }} className="h-[2340px]">
           <img src={Banner} alt='banner'/>
 
       {/* <NavigationBar/> */}
@@ -54,20 +56,20 @@ const Shop1 = () => {
       <div className="location"> 
        < a href="/" ><img className="home" alt="Home" src={home1} /> </a>
        <img className="vector" alt="Vector" src={vector} />
-          <div className="text-wrapper"><a href="/"> Categories</a></div> 
+          <div style={{ color: theme ? "#fff" : "" }}  className="text-wrapper"><a href="/"> Categories</a></div> 
             <img className="vector" alt="Vector" src={vector} /> 
-         <div className="div"><a href="/"> Vegetables</a></div> 
+         <div style={{ color: theme ? "#fff" : "" }} className="div"><a href="/"> Vegetables</a></div> 
          </div> 
          {/* /*filter*/ }
     </div> 
     <ShopFilter/>
 
     <div className="sort-by">
-      <div className="text-wrapper">Sort by:</div>
+      <div style={{ color: theme ? "#fff" : "" }} className="text-wrapper">Sort by:</div>
       <div className="dropdown">
-        <div className="div">Latest</div>
+        <div style={{ color: theme ? "#fff" : "" }}  className="div">Latest</div>
         <div className='ChevronDown'>
-          <div className="chevron-down-screen"> 
+          <div  className="chevron-down-screen"> 
           <img className="group" alt="Group" src={group} />
           </div>
          </div>

@@ -3,8 +3,13 @@ import { Heading } from "./Heading";
 import { Tag1 } from "./Tag1";
 import VectorUp from "../Images/Vectorup.png";
 
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
+
 
 const PopularTag = () => {
+  const [theme] = useThemeHook()
+
   return (
     <div className="flex-column items-start justify-center pt-0 pb-[29px] px-0 ml-5 mr-6  ">
       <Heading className="!flex-[0_0_auto] !shadow-[0px_-1px_0px_#e5e5e5] " text="Popular Tag" vector={VectorUp} />

@@ -20,14 +20,14 @@ import Page from "./Components/Faq/Page"
 // import Page from "./Components/Faq/Page"
 
 
-import Footer from "./Components/Homepage/Group";
+// import Footer from "./Components/Homepage/Group";
 
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Bottam from "./Components/Homepage/Bottam"
 import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
-import Page from "./Components/Faq/Page"; 
+// import Page from "./Components/Faq/Page"; 
 const App = () => {
   return (
     <div>

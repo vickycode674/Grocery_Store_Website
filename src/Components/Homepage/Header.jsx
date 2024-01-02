@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex  justify-around items-center">
+      <div className="flex  justify-around items-center md:mt-0 mr-0">
         <div
           className={`${
             darkMode
@@ -42,7 +42,7 @@ const Header = () => {
             className="w-[300px]"
           />
 
-          <div className="flex border-2 items-center rounded-lg">
+          <div className="flex border-2 items-center rounded-lg mt-4 md:mt-0">
             <BiSearch
               className={`${
                 darkMode ? "b-2 text-gray-200" : ""
@@ -55,11 +55,11 @@ const Header = () => {
               } w-64 outline-none`}
               placeholder="Search..."
             />
-            <button className="bg-[#FF6316] text-white px-6 py-2 rounded-r-lg text-sm font-bold">
+            <button className="bg-[#FF6316] text-white px-6 py-2 rounded-r-lg text-sm font-bold md:px-6 py-2 rounded-r-lg text-sm font-bold">
               Search
             </button>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-4 md:mt-0 ">
             <TbSunMoon
               className={`${
                 darkMode ? "text-white text-3xl" : "text-black text-3xl"
@@ -83,7 +83,7 @@ const Header = () => {
                 {count}
               </span>
             </span>
-            <div className="ml-6 -mt-3">
+            <div className="ml-6 -mt-3 md:ml-6 -mt-3">
               <p
                 className={`${
                   darkMode ? "text-white text-base" : "text-[#4D5D4D] text-base"
