@@ -1,6 +1,7 @@
 import greenCapsicum from "../Images/greenCapsicum.png";
 import greenChilli from "../Images/greenChilli.png";
 import redCapsicum from "../Images/redCapsicum.png";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const ProductsOrdered = () => {
   const items = [
@@ -26,12 +27,19 @@ const ProductsOrdered = () => {
       subtotal: "$10.00",
     },
   ];
+  const [theme] = useThemeHook();
   return (
     <div className="font-poppins overflow-x-scroll md:overflow-hidden">
-      <div className="">
-        <table className="w-[100%] mt-10 items-center">
-          <thead className="bg-[#F2F2F2] text-xs font-medium ">
-            <tr className="flex items-center justify-evenly">
+      <div>
+        <table className="w-[100%] mt-10 items-center ">
+          <thead
+            className="bg-[#F2F2F2] text-xs font-medium "
+            style={{ backgroundColor: theme ? "#292929" : "" }}
+          >
+            <tr
+              className="flex items-center justify-evenly"
+              style={{ color: theme ? "#B3B3B3" : "" }}
+            >
               <th className="p-2">PRODUCT</th>
               <th className="">PRICE</th>
               <th className="">QUANTITY</th>
@@ -42,11 +50,14 @@ const ProductsOrdered = () => {
             {items.map((item, id) => (
               <tr key={id} className="items-start">
                 <div className="flex items-start justify-evenly border-b-2">
-                  <div className="items-center md:flex md:w-[30%] md:-ml-24">
+                  <div className="items-center flex md:w-[30%] md:-ml-24">
                     <td>
-                      <img src={item.img} />
+                      <img
+                        src={item.img}
+                        className="w-[50px] md:w-full h-[80px] object-contain"
+                      />
                     </td>
-                    <td>{item.product}</td>
+                    <td className="whitespace-nowrap">{item.product}</td>
                   </div>
                   <div className="flex items-start mt-6 md:-ml-28">
                     <td className="">{item.price}</td>

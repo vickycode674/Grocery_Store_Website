@@ -1,7 +1,10 @@
+import { useThemeHook } from "../../../GlobalComponents/ThemeProvider";
+
 const Setting = () => {
+  const [theme] = useThemeHook();
   return (
-    <div className="font-poppins mt-5 m-2 md:m-0">
-      <div className="border-2 border-[#E6E6E6] rounded-lg md:w-[850px]">
+    <div className="font-poppins mt-5 m-2 md:m-0" style={{ backgroundColor: theme ? "#535353" : "" }} >
+      <div className="border-2 border-[#E6E6E6] rounded-lg md:w-[850px]" style={{ color: theme ? "#fff" : "" }}>
         <h3 className="font-medium text-xl border-b-2 pl-6 p-2">
           Billing Address
         </h3>
@@ -13,6 +16,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
                 placeholder="Dianne"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
             <div>
@@ -21,6 +25,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
                 placeholder="Russell"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
             <div>
@@ -31,6 +36,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[75%]"
                 placeholder="Zakirsoft"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
           </div>
@@ -38,11 +44,13 @@ const Setting = () => {
           <input
             type="text"
             className="border-[#E6E6E6] border-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[739px] p-2"
+            style={{ backgroundColor: theme ? "#535353" : "" }} 
           />
           <div className="md:flex gap-3">
             <div className="flex flex-col">
               <label>Country/Region</label>
-              <select className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[235px]">
+              <select className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[235px]"
+               style={{ backgroundColor: theme ? "#535353" : "" }} >
                 <option value="United States">United States</option>
                 <option value="India">India</option>
                 <option value="Germany">Germany</option>
@@ -50,7 +58,7 @@ const Setting = () => {
             </div>
             <div className="flex flex-col">
               <label>States</label>
-              <select className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[235px]">
+              <select className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[235px]" style={{ backgroundColor: theme ? "#535353" : "" }} >
                 <option value="Washington DC">Washington DC</option>
                 <option value="Chennai">Chennai</option>
                 <option value="Berlin">Berlin</option>
@@ -62,6 +70,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[245px]"
                 placeholder="20033"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
           </div>
@@ -72,6 +81,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
                 placeholder="dianne@gmail.com"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
             <div className="md:w-[43%]">
@@ -80,6 +90,7 @@ const Setting = () => {
                 type="text"
                 className="border-[#E6E6E6] border-2 p-2 rounded mb-5 outline-orange-600 w-[90%] md:w-[100%]"
                 placeholder="9384920483"
+                style={{ backgroundColor: theme ? "#535353" : "" }} 
               />
             </div>
           </div>

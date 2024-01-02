@@ -12,11 +12,11 @@ import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter
 import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
 
-import Footer from "./Components/Homepage/Footer";
+// import Footer from "./Components/Homepage/Footer";
 import Page from "./Components/Faq/Page"
 
 // import Footer from "./Components/Homepage/Group";
-// import Footer from "./Components/Homepage/Footer";
+import Footer from "./Components/Homepage/Footer";
 // import Page from "./Components/Faq/Page"
 
 
@@ -28,13 +28,17 @@ import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
 // import Page from "./Components/Faq/Page"; 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e7ef7a68767ca7df6a6d5270b9d4d9f369df2fa
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/whishlist" element={<Whishlist />} />
+        <Route path="/wishlist" element={<Whishlist />} />
         <Route path="/shoppingpage" element={<ShoppingPage />} />
         <Route path="/checkoutpage" element={<CheckOutpage />} />
         <Route path="/about" element={<About />} />

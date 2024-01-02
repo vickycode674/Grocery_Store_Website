@@ -5,19 +5,19 @@ const SignIn = () => {
   const [theme] = useThemeHook();
   return (
     <div
-      className="flex justify-center items-center"
+      className="md:flex justify-center items-center "
       style={{ backgroundColor: theme ? "#000000" : "" }}
     >
       <div
         style={{ boxShadow: "0 0 3px 0 rgba(0, 38, 3, 0.5)" ,backgroundColor: theme ? "#2A2C38" : "" }}
-        className="rounded-lg mt-16 mb-16"
+        className="rounded-lg md:mt-16 md:mb-16 m-1 md:m-0 ml-1 md:ml-0"
       >
         <h3 className="font-semibold text-3xl flex justify-center pt-3"
         style={{ color: theme ? "#fff" : "" }}
         >
           Sign In
         </h3>
-        <div className="flex flex-col w-96">
+        <div className="flex flex-col md:w-96">
           <input
             type="email"
             placeholder="Email"
@@ -41,7 +41,7 @@ const SignIn = () => {
             Login
           </button>
         </div>
-        <p className="text-[#666666] text-sm flex justify-center m-3"  style={{ color: theme ? "#fff" : "" }}>
+        <p className="text-[#666666] text-sm flex justify-center m-3 pb-2 md:pl-0"  style={{ color: theme ? "#fff" : "" }}>
           Don't have account?
           <span className="font-semibold text-black pl-1">
             <Link to="/signin"  style={{ color: theme ? "#fff" : "" }}>Register</Link>

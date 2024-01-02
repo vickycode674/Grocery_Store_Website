@@ -3,20 +3,17 @@ import NavigationBox from "../DashboardBoxes/NavigationBox";
 import AccountSetting from "./SettingsDetails.jsx/AccountSetting";
 import BillingAddress from "./SettingsDetails.jsx/BillingAddress";
 import ChangePassword from "./SettingsDetails.jsx/ChangePassword";
-
-// import AccountSetting from "./SettingsDetails/AccountSetting";
-// import BillingAddress from "../Settings/SettingsDetails/BillingAddress";
-// import ChangePassword from "../Settings/SettingsDetails/ChangePassword";
-// import NavigationBox from "../DashboardBoxes/NavigationBox";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const Settings = () => {
+  const [theme] = useThemeHook();
   return (
-    <div>
+    <div style={{ backgroundColor: theme ? "black" : "" }}>
       <div className="md:flex justify-center">
         <div>
           <NavigationBox />
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mt-2" >
           <AccountSetting />
           <BillingAddress />
           <ChangePassword />

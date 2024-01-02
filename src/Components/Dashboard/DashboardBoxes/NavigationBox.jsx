@@ -40,7 +40,7 @@ const NavigationBox = () => {
   return (
     <div
       className=" text-black border-2 rounded-lg m-2 md:mr-3"
-      style={{ backgroundColor: theme ? "#2A2C38" : "" }}
+      style={{ backgroundColor: theme ? "#535353" : "" }}
     >
       <h3
         className="font-medium text-xl pt-5 pl-6 "
@@ -85,9 +85,9 @@ const NavigationBox = () => {
           <p style={{ color: theme ? "#fff" : "" }}>Wishlist</p>
         </NavLink>
         <NavLink
-          onClick={() => handleNavLinkClick("/cart")}
-          style={activeStyle("/cart")}
-          to="/cart"
+          onClick={() => handleNavLinkClick("/ShoppingPage")}
+          style={activeStyle("/ShoppingPage")}
+          to="/ShoppingPage"
           className="px-10 py-2 mb-2 flex items-center gap-2"
         >
           <SlHandbag
