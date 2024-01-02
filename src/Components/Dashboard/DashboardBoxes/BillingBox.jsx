@@ -5,7 +5,7 @@ import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 const BillingBox = () => {
   const [theme] = useThemeHook();
   return (
-    <div className="border-2 h-72 rounded-lg m-2 md:m-0 md:pr-28 md:pl-10">
+    <div className="border-2 h-72 rounded-lg m-2 md:m-0 md:pr-28 md:pl-10" style={{ backgroundColor: theme ? "#535353" : "" }}>
       <div className="flex flex-col items-right pl-3 md:pl-0 pt-10">
         <p className="text-[#FF0000] font-medium text-sm pb-2">
           BILLING ADDRESS

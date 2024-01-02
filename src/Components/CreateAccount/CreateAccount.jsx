@@ -14,7 +14,7 @@ const CreateAccount = () => {
           boxShadow: "0 0 3px 0 rgba(0, 38, 3, 0.5)",
           backgroundColor: theme ? "#2A2C38" : "",
         }}
-        className="rounded-lg  mt-16 mb-16"
+        className="w-[90%] md:w-fit rounded-lg mt-6 md:mt-16 mb-16"
       >
         <h3
           className="font-semibold text-3xl flex justify-center pt-3"
@@ -22,7 +22,7 @@ const CreateAccount = () => {
         >
           Create Account
         </h3>
-        <div className="flex flex-col w-96">
+        <div className="flex flex-col md:w-96">
           <input
             type="email"
             placeholder="Email"

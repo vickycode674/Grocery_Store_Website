@@ -12,29 +12,30 @@ import SubscribeOurNewsletter from "./Components/Homepage/SubscribeOurNewsletter
 import SignIn from "./Components/SignIn/SignIn";
 import Shop1 from './Components/Shop/MainShop/Shop1'
 
-import Footer from "./Components/Homepage/Footer";
+// import Footer from "./Components/Homepage/Footer";
 import Page from "./Components/Faq/Page"
 
 // import Footer from "./Components/Homepage/Group";
-// import Footer from "./Components/Homepage/Footer";
+import Footer from "./Components/Homepage/Footer";
 // import Page from "./Components/Faq/Page"
 
 
-import Footer from "./Components/Homepage/Group";
+// import Footer from "./Components/Homepage/Group";
 
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Bottam from "./Components/Homepage/Bottam"
 import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
-import Page from "./Components/Faq/Page"; 
+// import Page from "./Components/Faq/Page"; 
+
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/whishlist" element={<Whishlist />} />
+        <Route path="/wishlist" element={<Whishlist />} />
         <Route path="/shoppingpage" element={<ShoppingPage />} />
         <Route path="/checkoutpage" element={<CheckOutpage />} />
         <Route path="/about" element={<About />} />

@@ -29,17 +29,19 @@ const SubscribeOurNewsletter = () => {
           <div className={styles.subscribe1}>Subscribe</div>
         </div>
       </div> */}
-	  <div className="flex items-center bg-white rounded-full pl-5">
-		<input type="text" className="" placeholder="Your email address"/>
-		<button className="bg-[#FF6316] rounded-full p-3 text-white text-sm font-semibold">Subscribe</button>
-	  </div>
-      <div className={styles.socialMediaParent}>
+      <div className="flex items-center bg-white ml-[5%] mr-[5%] md:ml-0 md:mr-0 rounded-full pl-5 mt-2 mb-2 md:mb-0 md:mt-0">
+        <input type="text" className="" placeholder="Your email address" />
+        <button className="bg-[#FF6316] rounded-full p-3 text-white text-sm font-semibold">
+          Subscribe
+        </button>
+      </div>
+      <div className="flex gap-2 justify-center">
         <img
           className={styles.socialMediaIcon4}
           style={{
             backgroundColor: theme ? "" : "#ff6316",
             borderRadius: "50%",
-            padding:"0.8rem"
+            padding: "0.8rem",
           }}
           alt=""
           src={FaceBook}
@@ -49,7 +51,7 @@ const SubscribeOurNewsletter = () => {
           style={{
             backgroundColor: theme ? "" : "#ff6316",
             borderRadius: "50%",
-            padding:"0.8rem"
+            padding: "0.8rem",
           }}
           alt=""
           src={Instagram}
@@ -58,8 +60,8 @@ const SubscribeOurNewsletter = () => {
           className={styles.socialMediaIcon5}
           style={{
             backgroundColor: theme ? "" : "#ff6316",
-			borderRadius: "50%",
-            padding:"0.8rem"
+            borderRadius: "50%",
+            padding: "0.8rem",
           }}
           alt=""
           src={Twitter}
