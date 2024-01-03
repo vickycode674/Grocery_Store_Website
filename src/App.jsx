@@ -28,14 +28,7 @@ import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
 // import Page from "./Components/Faq/Page"; 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 0e7ef7a68767ca7df6a6d5270b9d4d9f369df2fa
-=======
-
->>>>>>> 0dcee886c26597d7906ab96ee142ed494891f92d
 const App = () => {
   return (
     <div>
@@ -60,7 +53,7 @@ const App = () => {
       </Routes>
       <SubscribeOurNewsletter/>
        <Footer/> 
-      <Bottam/>
+      {/* <Bottam/> */}
     </div>
   );
 };
