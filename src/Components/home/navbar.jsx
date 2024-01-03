@@ -176,7 +176,7 @@ import {
           <BiShoppingBag className="size-10" style={{color:darkMode?'white':'black'}} />
         </div>
         <div className="px-12" onClick={()=>setDarkMode(!darkMode)}>
-        {darkMode? <BiSun className="size-6" style={{color:'white'}} />: <BiMoon className="size-6" />}
+        {darkMode? <BiSun className="size-6" style={{color:'white'}} />: <BiMoon className="size-6" style={{color:'black'}} />}
         </div>
         </div>
         
