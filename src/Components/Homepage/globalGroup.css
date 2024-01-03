@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+  	/* fonts */
+  	--font-quicksand: Quicksand;
+  	
+  	/* font sizes */
+  	--font-size-base: 16px;
+  	--font-size-5xl: 24px;
+  	
+  	/* Colors */
+  	--color-white: #fff;
+  	
+}

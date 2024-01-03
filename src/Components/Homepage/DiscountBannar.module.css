@@ -1,0 +1,87 @@
+@import url('glo.css');
+.summerSale {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.span1 {
+    color: var(--branding-success);
+}
+.span {
+    font-weight: 600;
+}
+.off {
+    position: relative;
+    font-size: 56px;
+    line-height: 120%;
+    mix-blend-mode: normal;
+}
+.summerSaleParent {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.freeOnAll1 {
+    position: relative;
+    line-height: 150%;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 441px;
+    opacity: 0.7;
+}
+.info {
+    position: absolute;
+    top: 60px;
+    left: 828px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-base);
+}
+.shopNow {
+    position: relative;
+    line-height: 120%;
+    font-weight: 600;
+}
+.groupIcon1 {
+    position: relative;
+    width: 15px;
+    height: 12.05px;
+    object-fit: cover;
+}
+.button {
+    position: absolute;
+    top: 247px;
+    left: 828px;
+    border-radius: 43px;
+    background-color: var(--branding-success);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 40px;
+    gap: var(--gap-base);
+}
+.discountBannar {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 358px;
+    background-image: url('../images/banner/Discount\ Bannar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: var(--body-medium-body-medium-600-size);
+    color: var(--gray-scale-white);
+    font-family: var(--body-medium-body-medium-600);
+}
+
