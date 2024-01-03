@@ -16,10 +16,12 @@ import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
 import Navbarrr from "./Components/home/navbar"
-import Footer from "./Components/home/footer"
+import Footer from "./Components/home/footer";
+import { useThemeHook } from "./Components/GlobalComponents/ThemeProvider";
 const App = () => {
+  const [theme] = useThemeHook()
   return (
-    <div >
+    <div style={{backgroundColor:theme?'black':'white'}}>
       <Navbarrr/>
       {/* <Header/> */}
       <Routes>

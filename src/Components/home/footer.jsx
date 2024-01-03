@@ -1,8 +1,8 @@
 import { Typography } from "@material-tailwind/react";
 import Logo from "../images/banner/Traceworks.png";
 // import { useThemeHook } from "../GlobalComponents/ThemeProvider";
-// import Logo2 from "../images/banner/Traceworks Trademarked Logo 1 (1).png";
-
+import Logo2 from "../images/banner/Traceworks Trademarked Logo 1 (1).png";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
 const LINKS = [
  
   {
@@ -18,13 +18,13 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
  
  function FooterWithSocialLinks() {
-
+    const [theme] = useThemeHook()
   return (
-    <footer   className="relative w-full">
+    <footer   className="relative w-full" style={{backgroundColor:theme?'black':'white'}}>
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="mb-6">
-          <img src={Logo} className="w-130 h-12" alt="Logo" />
+          <img src={theme?Logo2 : Logo} className="w-130 h-12" alt="Logo" />
           </Typography>
           <div className="grid grid-cols-2 justify-between gap-6">
             {LINKS.map(({ title, items }) => (
@@ -33,6 +33,7 @@ const currentYear = new Date().getFullYear();
                   variant="small"
                   color="blue-gray"
                   className="mb-3 font-medium opacity-40"
+                  style={{color:theme?'white':'black'}}
                 >
                   {title}
                 </Typography>
@@ -43,6 +44,7 @@ const currentYear = new Date().getFullYear();
                       href="#"
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      style={{color:theme?'white':'black'}}
                     >
                       {link}
                     </Typography>
@@ -56,10 +58,12 @@ const currentYear = new Date().getFullYear();
   <Typography
     variant="small"
     className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+    style={{color:theme?'white':'black'}}
+    
   >
     &copy; {currentYear} <a href="https://tracework.in/">Trace Work</a>. All Rights Reserved.
   </Typography>
-          <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+          <div className="flex gap-4 text-blue-gray-900 sm:justify-center" style={{color:theme?'white':'black'}}>
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
