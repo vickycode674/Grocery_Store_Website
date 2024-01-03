@@ -6,7 +6,7 @@ const Image = () => {
   return (
     <div className="relative" >
       
-      <img  className="absolute top-0 right-0  h-auto"
+      <img  className="absolute top-0 right-0  h-auto md:top-0 md:right-0"
         style={{ width: '621px', height: '600px' }}
         src={image}
       />

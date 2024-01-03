@@ -28,11 +28,15 @@
 import PropTypes from "prop-types";
 // import React from "react";
 import "../MainShop/shop1.css" ;
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
 
 export const Heading = ({ className, vector = "Vector.svg" }) => {
+  const [theme] = useThemeHook()
+
   return (
     <div className={`heading ${className}`}>
-      <div className="text-wrapper">All Categories</div>
+      <div style={{ color: theme ? "#fff" : "" }} className="text-wrapper">All Categories</div>
       <img className="vector" alt="Vector" src={vector} />
     </div>
   );

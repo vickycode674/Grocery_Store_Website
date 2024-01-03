@@ -1,19 +1,25 @@
 import PropTypes from "prop-types";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+
 // import React from "react";
 // import { IconComponentNode } from "./IconComponentNode";
 // import { NamecandidateNameSocialMediaScore101 } from "./NamecandidateNameSocialMediaScore101";
 // import { NamecandidateNameSocialMediaScore102 } from "./NamecandidateNameSocialMediaScore102";
 // import { SocialMedia } from "./SocialMedia";
 
-export const TeamCard = ({
+export const TeamCard = (
+    {
+    
     property1,
     text = "Jenny Wilson",
     text1 = "Ceo &amp; Founder",
     imageClassName ="![object-fit:unset]",
     image = "image.png",
 }) => {
+    const [theme] = useThemeHook()
+
     return (
-        <div
+        <div style={{ background: theme ? "black" : "" }}
             className={`w-[312px] h-[368px] rounded-[8px] bg-gray-scalewhite relative ${
                 property1 === "default" ? "border border-solid" : ""
             } ${property1 === "default" ? "border-gray-scalegray-100" : ""} ${
@@ -25,10 +31,10 @@ export const TeamCard = ({
                     property1 === "default" ? "left-[19px]" : "left-[20px]"
                 } ${property1 === "default" ? "top-[295px]" : "top-[296px]"}`}
             >
-                <div className="font-body-large-body-large-500 w-[272px] mt-[-1.00px] tracking-[var(--body-large-body-large-500-letter-spacing)] text-[length:var(--body-large-body-large-500-font-size)] [font-style:var(--body-large-body-large-500-font-style)] text-gray-scalegray-900 font-[number:var(--body-large-body-large-500-font-weight)] leading-[var(--body-large-body-large-500-line-height)] relative">
+                <div style={{ color: theme ? "#fff" : "" }}  className="font-body-large-body-large-500 w-[272px] mt-[-1.00px] tracking-[var(--body-large-body-large-500-letter-spacing)] text-[length:var(--body-large-body-large-500-font-size)] [font-style:var(--body-large-body-large-500-font-style)] text-gray-scalegray-900 font-[number:var(--body-large-body-large-500-font-weight)] leading-[var(--body-large-body-large-500-line-height)] relative">
                     {text}
                 </div>
-                <div className="font-body-small-body-small-400 w-[272px] tracking-[var(--body-small-body-small-400-letter-spacing)] [font-style:var(--body-small-body-small-400-font-style)] text-[length:var(--body-small-body-small-400-font-size)] text-gray-scalegray-500 font-[number:var(--body-small-body-small-400-font-weight)] leading-[var(--body-small-body-small-400-line-height)] relative">
+                <div style={{ color: theme ? "#fff" : "" }}  className="font-body-small-body-small-400 w-[272px] tracking-[var(--body-small-body-small-400-letter-spacing)] [font-style:var(--body-small-body-small-400-font-style)] text-[length:var(--body-small-body-small-400-font-size)] text-gray-scalegray-500 font-[number:var(--body-small-body-small-400-font-weight)] leading-[var(--body-small-body-small-400-line-height)] relative">
                     {text1}
                 </div>
             </div>

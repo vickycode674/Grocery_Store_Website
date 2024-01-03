@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
 // import React from "react";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
 
 export const Price = ({ property1, hasDiv = true }) => {
+  const [theme] = useThemeHook()
+
   return (
     <div className={`inline-flex items-start relative ${property1 === "sale" ? "gap-[2px]" : "gap-[4px]"}`}>
-      <div
+      <div style={{ color: theme ? "#fff" : "" }} 
         className={`
           w-fit mt-[-1.00px] text-gray-scalegray-900 whitespace-nowrap relative
           ${["BIG-sale", "BIG"].includes(property1) ? "font-body-XXL-body-XXL-500" : ["small-sale", "small"].includes(property1) ? "font-body-small-body-small-500" : "font-body-medium-body-medium-500"}

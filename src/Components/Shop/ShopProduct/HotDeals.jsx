@@ -3,13 +3,17 @@ import { Product1 } from "./Product1";
 import Image1 from "../Images/Image1.svg";
 import Image2 from "../Images/Image 2.svg";
 import Image3 from "../Images/Image3.svg";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
 
 
  export const HotDeals = () => {
+  const [theme] = useThemeHook()
+
   return (
     <div className="inline-flex flex-col  items-start justify-center gap-6relative mr-[-44] ml-5">
       {/* Title */}
-      <div className="relative w-fit mt-[-1.00px] text-3xl  mt-5 text-gray-scalegray-900 text-length-body-XL-body-XL-500-font-size tracking-body-XL-body-XL-500-letter-spacing leading-body-XL-body-XL-500-line-height whitespace-nowrap font-body-XL-body-XL-500-font-style">
+      <div style={{ color: theme ? "#fff" : "" }} className="relative w-fit mt-[3.00px] text-3xl  mt-5 text-gray-scalegray-900 text-length-body-XL-body-XL-500-font-size tracking-body-XL-body-XL-500-letter-spacing leading-body-XL-body-XL-500-line-height whitespace-nowrap font-body-XL-body-XL-500-font-style">
         Sale Products
       </div>
 
