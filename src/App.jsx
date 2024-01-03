@@ -42,13 +42,10 @@ const App = () => {
         {/* <Route path="/faq" element={<Page/>} /> */}
 
       </Routes>
-<<<<<<< HEAD
-      <SubscribeOurNewsletter/>
-       <Footer/> 
-=======
+
+     
       <SubscribeOurNewsletter/><br></br>
       <Footer/>
->>>>>>> 4cfb2b7b4cee592feb4a9f126851b6953bc02a3f
       {/* <Bottam/> */}
     </div>
   );
