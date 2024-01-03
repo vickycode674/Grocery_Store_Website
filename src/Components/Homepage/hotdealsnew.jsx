@@ -54,36 +54,36 @@ function HotDeals() {
       discountedPrice: "$20.99",
     },
     {
-      id: 7,
-      name: "Green Apple",
-      imageUrl: Image6,
-      price: "$14.99",
-      discountedPrice: "$20.99",
-    },
-    {
-      id: 8,
-      name: "Green Apple",
-      imageUrl: Image6,
-      price: "$14.99",
-      discountedPrice: "$20.99",
-    },
+        id: 12,
+        name: "Green Apple",
+        imageUrl: Image,
+        price: "$14.99",
+        discountedPrice: "$20.99",
+      },
+      {
+        id: 21,
+        name: "Green Apple",
+        imageUrl: Image2,
+        price: "$14.99",
+        discountedPrice: "$20.99",
+      },
+
     // Add more products here
   ];
 
   return (
     <div className="container mx-auto">
-     
-     
+      
       <div className="flex flex-wrap items-center justify-around">
         {products.map((product) => (
-          <div key={product.id}  className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"   >
+          <div key={product.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
             <div className="border border-[color:var(--Gray-Scale-Gray-100,#E6E6E6)] bg-white flex-grow flex flex-col items-stretch py-1 border-solid relative">
               <div>
                 <img
                   loading="lazy"
                   src={product.imageUrl}
                   alt={product.name}
-                  className="object-cover border-none object-center w-full h-48 md:h-64 lg:h-48 xl:h-56 overflow-hidden transition-transform transform hover:scale-105"
+                  className="object-cover object-center w-full h-48 md:h-64 lg:h-48 xl:h-56 overflow-hidden transition-transform transform hover:scale-105"
                 />
               </div>
               <div className="justify-center flex flex-col mt-1.5 p-3 items-start">

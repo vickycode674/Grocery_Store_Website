@@ -1,28 +1,29 @@
-import styles from './FollowUsOnInstagram.module.css';
-import Icon from "../images/instagram/Icons.svg";
 import Instagram from "../images/instagram/Instagram Post.png";
-import Instagram1 from "../images/instagram/Instagram Post (1).png"
-import Instagram2 from "../images/instagram/Instagram Post (2).png"
-import Instagram3 from "../images/instagram/Instagram Post (3).png"
-import Instagram4 from "../images/instagram/Instagram Post (4).png"
-import Instagram5 from "../images/instagram/Instagram Post (5).png"
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
+import Instagram1 from "../images/instagram/Instagram Post (1).png";
+import Instagram2 from "../images/instagram/Instagram Post (2).png";
+import Instagram3 from "../images/instagram/Instagram Post (3).png";
+import Instagram4 from "../images/instagram/Instagram Post (4).png";
+import Instagram5 from "../images/instagram/Instagram Post (5).png";
 
 const FollowUsOnInstagram = () => {
-    const [theme] = useThemeHook()
-  	return (
-    		<div className={styles.followUsOnInstagram1} >
-      			<div className={styles.followUsOn1} style={{color:theme ? 'white':'black'}}>Follow us on Instagram</div>
-      			<img className={styles.instagramPostIcon} alt="" src={Instagram} />
-      			<img className={styles.instagramPostIcon1} alt="" src={Instagram1} />
-      			<img className={styles.instagramPostIcon2} alt="" src={Instagram2} />
-      			<img className={styles.instagramPostIcon3} alt="" src={Instagram3} />
-      			<img className={styles.instagramPostIcon4} alt="" src={Instagram4} />
-      			<div className={styles.instagramPost}>
-        				<img className={styles.instagramPostIcon5} alt="" src={Instagram5} />
-        				<img className={styles.icons1} alt="" src={Icon} />
-      			</div>
-    		</div>);
+  const images = [Instagram, Instagram1, Instagram2, Instagram3, Instagram4, Instagram5];
+
+  return (
+    <div className="container mx-auto p-4 md:p-8">
+      <h1 className="text-3xl font-bold mb-4 md:mb-6">Follow Us On Instagram</h1>
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 py-4 md:py-6 px-4 md:px-11 lg:px-20 xl:px-32 overflow-x-auto">
+        {images.map((image, index) => (
+          <div key={index} className="flex-shrink-0 mb-3 md:mb-0">
+            <img
+              src={image}
+              alt={`Image ${index + 1}`}
+              className="w-full md:w-36 h-auto rounded-lg shadow-md"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default FollowUsOnInstagram;

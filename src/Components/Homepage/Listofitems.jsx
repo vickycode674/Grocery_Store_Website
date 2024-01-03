@@ -1,77 +1,69 @@
-
-import styles from './PopularCategoriess.module.css';
-import Image1 from "../images/image 1 (1).png"
-import Image2 from "../images/image 1 (2).png"
-import Image3 from "../images/image 1 (3).png"
-import Image4 from "../images/image 1 (4).png"
-import Image5 from "../images/image 1 (5).png"
-import Image6 from "../images/image 1 (6).png"
-import Image7 from "../images/image 1 (7).png"
-import Image8 from "../images/image 1 (8).png"
-import Image9 from "../images/image 1 (9).png"
-import Image10 from "../images/image 1 (10).png"
-import Group from "../images/Group.svg"
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
+import { Button } from '@material-tailwind/react';
 
+// Define an array of image paths
+import image1 from "../images/image 1 (1).png";
+import image2 from "../images/image 1 (2).png";
+import image3 from "../images/image 1 (3).png";
+import image4 from "../images/image 1 (4).png";
+import image5 from "../images/image 1 (5).png";
+import image6 from "../images/image 1 (6).png";
+import image7 from "../images/image 1 (7).png";
+import image8 from "../images/image 1 (8).png";
+import Group from "../images/Group.svg"
 
-const PopularCategories = () => {
-    const [theme] = useThemeHook();
+const images = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+ 
+];
 
-  	return (
-    		<div className={styles.popularCategories} style={{ background: theme ?  '#000000': '#FFFFFF'  }}>
-      			<div className={styles.category}>
-        				<img className={styles.image1Icon} alt="" src={Image1} />
-        				<div className={styles.freshFruit} style={{width:'153px'}}>Diabetic Food</div>
-      			</div>
-      			<div className={styles.category1}>
-        				<img className={styles.image1Icon} alt="" src={Image2} />
-        				<div className={styles.freshFruit} style={{width:'168px'}}>Fresh Fruit</div>
-      			</div>
-      			<div className={styles.category2}>
-        				<img className={styles.image1Icon} alt="" src={Image3}/>
-        				<div className={styles.freshFruit} style={{}}>{`Bread & Bakery`}</div>
-      			</div>
-      			<div className={styles.category3}>
-        				<img className={styles.image1Icon} alt="" src={Image4}/>
-        				<div className={styles.freshFruit}>Fresh Vegetables</div>
-      			</div>
-      			<div className={styles.category4}>
-        				<img className={styles.image1Icon} alt="" src={Image5}/>
-        				<div className={styles.freshFruit} style={{width:'165px'}}>Baking Needs</div>
-      			</div>
-      			<div className={styles.category5}>
-        				<img className={styles.image1Icon} alt="" src={Image6}/>
-        				<div className={styles.freshFruit} style={{width:'149px',top:'0px'}}>{`Meat & Fish`}</div>
-      			</div>
-      			<div className={styles.category6}>
-        				<img className={styles.image1Icon} alt="" src={Image7}/>
-        				<div className={styles.freshFruit} style={{width:'165px'}}>Cooking</div>
-      			</div>
-      			<div className={styles.category7}>
-        				<img className={styles.image1Icon} alt="" src={Image8}/>
-        				<div className={styles.freshFruit} style={{width:'156px'}}>Snacks</div>
-      			</div>
-      			<div className={styles.category8}>
-        				<img className={styles.image1Icon} alt="" src={Image9}/>
-        				<div className={styles.freshFruit} style={{width:'162px'}}>Beverages</div>
-      			</div>
-      			<div className={styles.category9}>
-        				<img className={styles.image1Icon} alt="" src={Image10}/>
-        				<div className={styles.freshFruit}style={{width:'132px',height:'30px'}}>Dish Detergents</div>
-      			</div>
-      		
-      			
-      			<div className={styles.heading}>
-        				<div className={styles.popularCategories1}style={{ color: theme ?  'white': ''  }}>Popular Categories</div>
-        				<div className={styles.button}>
-          					<div className={styles.viewAll}>View All</div>
-          					<img className={styles.groupIcon1} alt="" src={Group} />
-        				</div>
-      			</div>
-    		</div>);
-};
+function ListOfItems() {
+  const {theme} = useThemeHook()
+  return (
+    <div style={{ backgroundColor: theme ? 'white' : 'white' }}>
 
-export default PopularCategories;
+      <div className="flex flex-col items-stretch">
+        <div className="justify-between items-stretch flex w-4/5 gap-5 px-5 max-md:max-w-full max-md:flex-wrap">
+          <div className="text-black text-3xl font-semibold leading-10 grow shrink basis-auto">
+            Popular Products
+          </div>
+          <div className="justify-center items-stretch  flex gap-3 rounded-[43px] self-start">
+            <div className="text-orange-500 text-base font-medium leading-6">
+              <Button className="text-orange-500 text-base font-medium leading-6" variant="text">View All</Button>
+            </div>
+            <img
+              loading="lazy"
+              src={Group}
+              className="aspect-[1.25] object-contain object-center w-[15px] overflow-hidden self-center shrink-0 max-w-full my-auto"
+            />
+          </div>
+        </div>
+        <div className="flex items-stretch justify-between flex-wrap mt-8 px-5 max-md:max-w-full">
+          {images.map((image, index) => (
+            <div key={index} className="w-[calc(20% - 1rem)] mb-5">
+              <div className="justify-center items-center border border-[color:var(--Gray-Scale-Gray-100,#E6E6E6)] bg-white flex grow basis-[0%] flex-col py-5 rounded-md border-solid">
+                <img
+                  loading="lazy"
+                  src={image}
+                  className="aspect-[1.54] object-contain object-center w-full h-48 overflow-hidden"
+                />
+                <div className="text-black text-center text-lg font-medium leading-7 self-stretch whitespace-nowrap mt-4">
+                  Product {index + 1}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
-
-
+export default ListOfItems;

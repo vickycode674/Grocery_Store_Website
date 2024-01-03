@@ -1,49 +1,63 @@
-import styles from './Feature.module.css';
-import Delivery from "../images/delivery-truck 1.svg";
-import Customer from "../images/headphones 1.svg"
-import Bag from "../images/shopping-bag.svg";
-import Pack from "../images/package.svg"
-import Delivery1 from "../images/delivery-truck12.svg";
-import Customer2 from "../images/headphones 12.svg"
-import Bag2 from "../images/shopping-bag12.svg";
-import Pack2 from "../images/package12.svg"
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
+import Delivery from "../images/banner/delivery-truck 1.svg";
+import Head from "../images/banner/headphones 1.svg";
+import Bag from "../images/banner/shopping-bag.svg";
+import Pack from "../images/banner/package.svg";
+function Feature() {
+  const features = [
+    {
+      id: 1,
+      imageSrc:Delivery,
+      title: "Free Shipping",
+      description: "Free shipping on all your order",
+    },
+    {
+      id: 2,
+      imageSrc:Head,
+      title: "Customer Support 24/7",
+      description: "Instant access to Support",
+    },
+    {
+      id: 3,
+      imageSrc:Bag,
+      title: "100% Secure Payment",
+      description: "We ensure your money is safe",
+    },
+    {
+      id: 4,
+      imageSrc:Pack,
+      title: "Money-Back Guarantee",
+      description: "30 Days Money-Back Guarantee",
+    },
+  ];
 
+  return (
+    <div className="justify-between shadow-2xl bg-orange-600 p-10 rounded-lg max-md:px-5">
+      <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+        {features.map((feature) => (
+          <div
+            key={feature.id}
+            className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0"
+          >
+            <div className="justify-between items-center flex grow gap-4 max-md:mt-10">
+              <img
+                loading="lazy"
+                src={feature.imageSrc}
+                className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full my-auto"
+              />
+              <div className="justify-center items-stretch self-stretch flex grow basis-[0%] flex-col">
+                <div className="text-black text-base font-semibold leading-5 whitespace-nowrap">
+                  {feature.title}
+                </div>
+                <div className="text-white text-sm leading-5 whitespace-nowrap mt-2">
+                  {feature.description}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
-const Featured = () => {
-  	return (
-      
-    		<div className={styles.featured} >
-      			<div className={styles.feature}>
-        				<img className={styles.deliveryTruck1Icon1}  alt="" src={Delivery} />
-        				<div className={styles.info}>
-          					<div className={styles.freeShipping}>Free Shipping</div>
-          					<div className={styles.freeShippingOn1}>Free shipping on all your order</div>
-        				</div>
-      			</div>
-      			<div className={styles.feature}>
-        				
-        				<img className={styles.deliveryTruck1Icon1} alt="" src={Customer} />
-        				<div className={styles.info}>
-          					<div className={styles.freeShipping}>Customer Support 24/7</div>
-          					<div className={styles.freeShippingOn1}>Instant access to Support</div>
-        				</div>
-      			</div>
-      			<div className={styles.feature}>
-        				<img className={styles.deliveryTruck1Icon1} alt="" src={ Bag} />
-        				<div className={styles.info}>
-          					<div className={styles.freeShipping}>100% Secure Payment</div>
-          					<div className={styles.freeShippingOn1}>We ensure your money is save</div>
-        				</div>
-      			</div>
-      			<div className={styles.feature}>
-        				<img className={styles.deliveryTruck1Icon1} alt="" src={Pack} />
-        				<div className={styles.info}>
-          					<div className={styles.freeShipping}>Money-Back Guarantee</div>
-          					<div className={styles.freeShippingOn1}>30 Days Money-Back Guarantee</div>
-        				</div>
-      			</div>
-    		</div>);
-};
-
-export default Featured;
+export default Feature;

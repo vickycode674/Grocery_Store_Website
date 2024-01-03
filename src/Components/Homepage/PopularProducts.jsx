@@ -1,20 +1,11 @@
-import styles from './PopularProducts.module.css';
-import Gruop from "../images/Group.svg";
-import Bag from "../images/popularProducts/Rectangle.svg"
-import Heart from "../images/popularProducts/Heart.svg"
-import Eye from "../images/popularProducts/Eye 1.svg";
-import Star from "../images/popularProducts/Star 1.svg"
-import Image from "../images/popularProducts/Image.png"
-import Lettuce from "../images/popularProducts/Imagelettcus.png";
-import EggPlant from "../images/popularProducts/Imagebringle.png";
-import GreenCapsicum from "../images/popularProducts/Imagecapsicum.png";
-import GreenChili from "../images/popularProducts/Imagechiki.png";
-import Potota from "../images/popularProducts/Imagepatato.png";
-import Corn from "../images/popularProducts/Image (1)corn.png";
-import RedChili from "../images/popularProducts/Image (2)redchili.png"
-import Tamoto from "../images/popularProducts/Image (3)tomoto.png";
-import Mango from "../images/popularProducts/Image (4)mango.png";
-import React, { useState, useEffect } from 'react';
+// import styles from './PopularProducts.module.css';
+// import Gruop from "../images/Group.svg";
+// import Bag from "../images/popularProducts/Rectangle.svg"
+// import Heart from "../images/popularProducts/Heart.svg"
+// import Eye from "../images/popularProducts/Eye 1.svg";
+// import Star from "../images/popularProducts/Star 1.svg"
+import HotDeals from './hotdealsnew';
+import  { useState, useEffect } from 'react';
 
 const PopularProducts = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -35,320 +26,113 @@ const PopularProducts = () => {
         // Add leading zero if the value is less than 10
         const formatTime = (value) => (value < 10 ? `0${value}` : value);
 
-  	return (
-    		<div className={styles.popularProducts}>
-      			<div className={styles.popularProductsChild} />
-      			<div className={styles.heading}>
-        				<div className={styles.popularCategories}>Hot Deals</div>
-        				<div className={styles.button}>
-          					<div className={styles.viewAll}>View All</div>
-          					<img className={styles.groupIcon1} alt="" src={Gruop} />
-        				</div>
-      			</div>
-      			<div className={styles.product5n}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Image} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Fresh Cauliflower</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$12.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n1}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={RedChili} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Red Chili</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$12.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n2}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Corn} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Corn</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$12.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n3}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Potota} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Big Potatoes</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$12.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n4}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Lettuce} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Green Lettuce</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$9.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n5}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={GreenCapsicum} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Green Capsicum</div>
-            						<div className={styles.price5}>
-              							<div className={styles.viewAll}>$9.00</div>
-              							<div className={styles.div7}>$20.99</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-        				<div className={styles.tag}>
-          					<div className={styles.sale}>Sale</div>
-          					<div className={styles.viewAll}>50%</div>
-        				</div>
-      			</div>
-      			<div className={styles.product5n6}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Tamoto} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Red Tomatos</div>
-            						<div className={styles.price5}>
-              							<div className={styles.viewAll}>$9.00</div>
-              							<div className={styles.div7}>$20.99</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-        				<div className={styles.tag}>
-          					<div className={styles.sale}>Sale</div>
-          					<div className={styles.viewAll}>50%</div>
-        				</div>
-      			</div>
-      			<div className={styles.product5n7}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={GreenChili} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Green Chili</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$34.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n8}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Mango} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Surjapur Mango</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$34.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.product5n9}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={Image} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Chinese cabbage</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$12.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-      			<div className={styles.bigProducts}>
-        				<div className={styles.image12}>
-          					<img className={styles.imageIcon10} alt="" src={Image} />
-          					<div className={styles.button1}>
-            						<img className={styles.wishlistIcon1} alt="" src={Heart} />
-            						<div className={styles.button2}>
-              							<div className={styles.popularCategories}>Add to Cart</div>
-              							<img className={styles.rectangleIcon1} alt="" src={Bag} />
-            						</div>
-            						<img className={styles.wishlistIcon1} alt="" src={Eye} />
-          					</div>
-          					<div className={styles.tagParent}>
-            						<div className={styles.tag2}>
-              							<div className={styles.sale}>Sale</div>
-              							<div className={styles.viewAll}>50%</div>
-            						</div>
-            						<div className={styles.tag3}>
-              							<div className={styles.sale}>Best Sale</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div className={styles.info10}>
-          					<div className={styles.chineseCabbage}>Chinese cabbage</div>
-          					<div className={styles.price10}>
-            						<div className={styles.viewAll}>$12.00</div>
-            						<div className={styles.div7}>$24.00</div>
-          					</div>
-          					<div className={styles.rating10}>
-            						<img className={styles.ratingChild48} alt="" src={Star} />
-            						<img className={styles.ratingChild48} alt="" src={Star} />
-            						<img className={styles.ratingChild48} alt="" src={Star} />
-            						<img className={styles.ratingChild48} alt="" src={Star} />
-            						<img className={styles.ratingChild48} alt="" src={Star} />
-            						<div className={styles.feedback}> (524 Feedback)</div>
-          					</div>
-        				</div>
-        				<div className={styles.hurryUpOfferEndsIn1}>
-          					<div className={styles.hurryUpOffer1}>Hurry up! Offer ends In:</div>
-          					<div className={styles.time}>
-                                
-            						<div className={styles.days}>
-              							<div className={styles.viewAll}>01</div>
-              							<div className={styles.days1}>Days</div>
-            						</div>
-                                    <div className={styles.div20}>:</div>
-            						<div className={styles.days}>
-              							<div className={styles.viewAll}>{formatTime(hours)}</div>
-              							<div className={styles.days1}>Hours</div>
-            						</div>
-            						<div className={styles.div20}>:</div>
-            						<div className={styles.days}>
-              							<div className={styles.viewAll}>{formatTime(minutes)}</div>
-              							<div className={styles.days1}>Mins</div>
-            						</div>
-            						<div className={styles.div22}>:</div>
-            						<div className={styles.days}>
-              							<div className={styles.viewAll}>{formatTime(seconds)}</div>
-              							<div className={styles.days1}>Secs</div>
-            						</div>
-          					</div>
-        				</div>
-      			</div>
-      			<div className={styles.product5n10}>
-        				<div className={styles.productImage}>
-          					<img className={styles.imageIcon} alt="" src={EggPlant} />
-        				</div>
-        				<div className={styles.productInfo}>
-          					<div className={styles.info}>
-            						<div className={styles.greenApple}>Eggplant</div>
-            						<div className={styles.price}>
-              							<div className={styles.viewAll}>$34.00</div>
-            						</div>
-          					</div>
-          					<div className={styles.rating}>
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-            						<img className={styles.ratingChild} alt="" src={Star} />
-          					</div>
-        				</div>
-        				<img className={styles.addToCart12} alt="" src={Bag} />
-      			</div>
-    		</div>);
-};
+		  return (
+			<div className='flex'>
+			<div className="items-stretch border border-[color:var(--Branding-Success-Dark,#FF6316)] shadow-sm bg-white flex max-w-[528px] flex-col pb-6 border-solid hover:focus-within">
+			<img
+					loading="lazy"
+					srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/041d3dbda250a96c7abcdd682f51ad7190f1dcd61e5cdbc5cc0ce921bd285f73?apiKey=f50fc97234d04439b8978904637e7b9c&"
+					className="aspect-[1.18] object-contain object-center w-full overflow-hidden max-md:max-w-full"
+				  />
+				  <div className="items-stretch flex w-full flex-col pt-1.5 px-6 max-md:max-w-full max-md:px-5">
+					<div className="text-orange-500 text-center text-lg leading-7 max-md:max-w-full">
+					  Chinese cabbage
+					</div>
+					<div className="items-stretch self-center flex gap-1 mt-2">
+					  <div className="text-black text-2xl font-medium leading-9 grow whitespace-nowrap">
+						$12.00
+					  </div>
+					  <div className="text-red-600 text-2xl leading-9 grow whitespace-nowrap">
+						$24.00
+					  </div>
+					</div>
+					<div className="items-start self-center flex gap-0 mt-2">
+					  <img
+						loading="lazy"
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/953f2e36829eede30b7dc1af691100b4d3ff7564a9133d94797769280319ddb4?apiKey=f50fc97234d04439b8978904637e7b9c&"
+						className="aspect-square object-contain object-center w-[18px] overflow-hidden self-stretch shrink-0 max-w-full"
+					  />
+					  <img
+					  alt='kjdfk'
+						loading="lazy"
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b836d89b148cc23c7135c61860666ccb30dd42966d98a0cb0840d524a9ce6b0?apiKey=f50fc97234d04439b8978904637e7b9c&"
+						className="aspect-square object-contain object-center w-[18px] overflow-hidden self-stretch shrink-0 max-w-full"
+					  />
+					  <img
+						loading="lazy"
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b836d89b148cc23c7135c61860666ccb30dd42966d98a0cb0840d524a9ce6b0?apiKey=f50fc97234d04439b8978904637e7b9c&"
+						className="aspect-square object-contain object-center w-[18px] overflow-hidden self-stretch shrink-0 max-w-full"
+					  />
+					  <img
+						loading="lazy"
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/2053b72a84bcf9fca87299468ac1915155c71f0245237db4ae5ebf126e9b98d9?apiKey=f50fc97234d04439b8978904637e7b9c&"
+						className="aspect-square object-contain object-center w-[18px] overflow-hidden self-stretch shrink-0 max-w-full"
+					  />
+					  <img
+						loading="lazy"
+						src="https://cdn.builder.io/api/v1/image/assets/TEMP/2053b72a84bcf9fca87299468ac1915155c71f0245237db4ae5ebf126e9b98d9?apiKey=f50fc97234d04439b8978904637e7b9c&"
+						className="aspect-square object-contain object-center w-[18px] overflow-hidden self-stretch shrink-0 max-w-full"
+					  />
+					  <div className="text-zinc-500 text-xs leading-4 grow whitespace-nowrap self-start">
+						{" "}
+						(524 Feedback)
+					  </div>
+					</div>
+				  </div>
+				  <div className="text-red-600 text-center text-sm leading-5 self-center whitespace-nowrap mt-5">
+					Hurry up! Offer ends In:
+				  </div>
+				  <div className="items-start self-center flex gap-0 mt-1.5 px-5">
+					<div className="items-center self-stretch flex grow basis-[0%] flex-col">
+					  <div className="text-black text-center text-lg font-medium leading-7 whitespace-nowrap">
+						01
+					  </div>
+					  <div className="text-red-600 text-center text-xs font-medium leading-3 tracking-wide uppercase self-stretch whitespace-nowrap">
+						Days
+					  </div>
+					</div>
+					<div className="items-center self-stretch flex grow basis-[0%] flex-col">
+					  <div className="text-black text-center text-lg font-medium leading-7 whitespace-nowrap">
+						{formatTime(hours)}
+					  </div>
+					  <div className="text-red-600 text-center text-xs font-medium leading-3 tracking-wide uppercase self-stretch whitespace-nowrap">
+						Hours
+					  </div>
+					</div>
+					<div className="text-zinc-500 text-center text-xl leading-7 self-start">
+					  :
+					</div>
+					<div className="items-center self-stretch flex grow basis-[0%] flex-col">
+					  <div className="text-black text-center text-lg font-medium leading-7 whitespace-nowrap">
+					  {formatTime(minutes)}
+					  </div>
+					  <div className="text-red-600 text-center text-xs font-medium leading-3 tracking-wide uppercase self-stretch whitespace-nowrap">
+						Mins
+					  </div>
+					</div>
+					<div className="text-zinc-500 text-center text-xl leading-7 self-start">
+					  :
+					</div>
+					<div className="items-center self-stretch flex grow basis-[0%] flex-col">
+					  <div className="text-black text-center text-lg font-medium leading-7 whitespace-nowrap">
+					  {formatTime(seconds)}
+					  </div>
+					  <div className="text-red-600 text-center text-xs font-medium leading-3 tracking-wide uppercase self-stretch whitespace-nowrap">
+						Secs
+					  </div>
+					</div>
+				  </div>
+				
+				</div>
+				<div className="flex-grow hover:focus-within:*: border:none">
+        {/* Render the HotDeals component in the larger space */}
+        <HotDeals />
+      </div>
+				</div>
+			  );
+		}
+		
+		
+		
 
 export default PopularProducts;
