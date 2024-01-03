@@ -58,13 +58,17 @@ import PropTypes from "prop-types";
 import { Radio } from "./Radio";
 import "../MainShop/shop1.css" ;
 
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
 
 export const Categories = ({ radioProperty1 = "normal", text = "Cooking", text1 = " (54)" }) => {
+  const [theme] = useThemeHook()
+
   return (
     <div className="categories">
       <Radio property1={radioProperty1} />
-        <div className="cooking">{text}</div>
-        <div className="element">{text1}</div>
+        <div style={{ color: theme ? "#fff" : "" }}className="cooking">{text}</div>
+        <div style={{ color: theme ? "#fff" : "" }} className="element">{text1}</div>
       </div>
   );
 };

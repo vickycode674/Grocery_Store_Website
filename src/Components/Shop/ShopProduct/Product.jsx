@@ -6,12 +6,15 @@ import { Tag } from "./Tag";
 // import { AddToWishlist } from "./AddToWishlist";
 import { Price } from "./Price";
 import star from "../Images/Star 1.png";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
+
 
 // import { QuickView } from "./QuickView";
 
 export const Product = ({ property1, image = "image.png", text = "Green Apple", rating = "rating.svg" }) => {
+  const [theme] = useThemeHook()
   return (
-    <div className={`border border-solid w-[312px] h-[407px]  rounded-[8px] top-0 left-80 bg-gray-scalewhite relative mt-[-64]  ${property1 === "hover" ? "border-brandingsuccess-dark" : "border-gray-scalegray-100"} ${property1 === "hover" ? "shadow-hover-shadow" : ""}`}>
+    <div  style={{ background: theme ? "black" : "" }}  className={`border border-solid w-[312px] h-[407px]  rounded-[8px] top-0 left-80 bg-gray-scalewhite relative mt-[-64]  ${property1 === "hover" ? "border-brandingsuccess-dark" : "border-gray-scalegray-100"} ${property1 === "hover" ? "shadow-hover-shadow" : ""}`}>
   <div className={`left-0 top absolute  ${["hover", "sales"].includes(property1) ? "w-[312px]" : ""} ${property1 === "default" ? "flex" : ""} ${property1 === "default" ? "flex-col" : ""} ${property1 === "default" ? "items-start" : ""} ${property1 === "default" ? "gap-[10px]" : ""} ${property1 === "default" ? "p-[5px]" : ""} ${["hover", "sales"].includes(property1) ? "h-[312px]" : ""}`}>
     {property1 === "default" && <img className="relative w-[302px] h-[302px]" alt="Image" src={image} />}
     {["hover", "sales"].includes(property1) && (
@@ -54,6 +57,7 @@ export const Product = ({ property1, image = "image.png", text = "Green Apple", 
         <div className="left-0 inline-flex flex-col items-start top-0 gap-[6px] p-[16px] justify-center absolute">
           <div className="inline-flex flex-col items-start flex-[0_0_auto] relative">
             <div
+              style={{ color: theme ? "#fff" : "" }}
               className={`font-body-small-body-small-400 w-[280px] mt-[-1.00px] tracking-[var(--body-small-body-small-400-letter-spacing)] text-[length:var(--body-small-body-small-400-font-size)] [font-style:var(--body-small-body-small-400-font-style)] relative font-[number:var(--body-small-body-small-400-font-weight)] leading-[var(--body-small-body-small-400-line-height)] ${
                 property1 === "hover" ? "text-brandingsuccess-dark" : "text-gray-scalegray-700"
               }`}
