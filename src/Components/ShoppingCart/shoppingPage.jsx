@@ -18,7 +18,7 @@ const ShoppingPage = () => {
             <ShopingCart />
             <CartTotal/>
             <CouponCode/>
-        </div>
+        </div><br></br>
         </>
     )
 }
