@@ -15,7 +15,7 @@ const ShoppingPage = () => {
         <Banner/>
         <div className={styles.main} style={{backgroundColor:theme ? 'black':''}}>
             <h1 className={styles.heading} style={{color:theme ? 'white':'',bottom:'10px'}}>My Wishlist</h1>
-            <ShopingCart/>
+            <ShopingCart />
             <CartTotal/>
             <CouponCode/>
         </div>
