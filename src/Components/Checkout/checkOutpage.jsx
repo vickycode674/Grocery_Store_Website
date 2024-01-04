@@ -3,8 +3,9 @@ import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import NavLinks from "../Wishlist/navLinks";
 import Banner from "./banner";
 //import the componnets
-import BillingFrame from './billingFrame';
-import OrderSummery from './orderSummary';
+import Check from "./check"
+// import BillingFrame from './billingFrame';
+// import OrderSummery from './orderSummary';
 const CheckOutpage = () => {
     const [theme] = useThemeHook()
   return (
@@ -12,8 +13,9 @@ const CheckOutpage = () => {
     <NavLinks/>
      <Banner/>
     <div className={styles.main} style={{backgroundColor:theme ? 'black':''}}>
-        <BillingFrame/>
-        <OrderSummery/>
+        {/* <BillingFrame/> */}
+        {/* <OrderSummery/> */}
+        <Check/>
     </div>
     </>
   )
