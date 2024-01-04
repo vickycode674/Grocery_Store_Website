@@ -1,7 +1,7 @@
 
 function CartTotal() {
   return (
-    <div style={{ position: 'absolute', top: '46%', right: '100px', transform: 'translateY(-50%)', zIndex: '9999' }}>
+    <div style={{ position: 'absolute', top: '36%', right: '100px', transform: 'translateY(-50%)', zIndex: '9999' }}>
 		<div  className="border bg-gray-800 flex max-w-[424px] flex-col items-stretch  px-6 py-7 rounded-lg border-solid border-neutral-600">
       <div className="text-white text-xl font-medium leading-8">Cart Total</div>
       <div className="justify-between items-stretch shadow-sm bg-gray-800 flex gap-5 mt-4 py-3">

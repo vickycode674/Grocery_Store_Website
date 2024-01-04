@@ -1,7 +1,7 @@
 
 function Coupon() {
   return (
-    <div className="items-center border bg-gray-800 flex justify-between gap-0 p-5 rounded-lg border-solid border-neutral-600 max-md:flex-wrap">
+    <div className="items-center border bg-gray-800 flex justify-between gap-0 p-5 rounded-lg border-solid border-neutral-600 max-md:flex-wrap max-w-[870px]">
       <div className="text-white text-xl font-medium leading-8 whitespace-nowrap my-auto">
         Coupon Code
       </div>
