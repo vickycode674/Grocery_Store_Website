@@ -3,7 +3,6 @@ import { Input } from "@material-tailwind/react";
 
 import  { useState } from 'react';
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
-import "./placeholder.css"
 // Define the component
 const MyForm = () => {
     const [theme] = useThemeHook();
@@ -45,7 +44,9 @@ const MyForm = () => {
 
   // Render the component
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6  bg-white rounded-md shadow-md" style={{backgroundColor:theme?'#2A2C38':'#ffffff'}}>
+    <div style={{ position: 'absolute', top: '46%', left: '140px', transform: 'translateY(-50%)', zIndex: '9999' }}>
+
+    <div className="max-w-xl mx-auto mt-10 p-6  bg-white rounded-md shadow-md" style={{backgroundColor:theme?'transparent':'#ffffff'}}>
       <h2 className="text-2xl font-bold mb-6" style={{color:theme?'white':'black'}}>Billing Information</h2>
       <form onSubmit={handleSubmit}>
         {/* First Name, Last Name, and Company Name in the same row */}
@@ -251,13 +252,14 @@ const MyForm = () => {
         </div>
 
         {/* Submit button */}
-        <button
+        {/* <button
           type="submit"
           className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
         >
           Place Order
-        </button>
+        </button> */}
       </form>
+    </div>
     </div>
   );
 };

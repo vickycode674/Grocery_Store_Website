@@ -1,9 +1,0 @@
-/* input {
-    color: #FF6316;
-    &::placeholder{
-        color:#FF6316;
-    }
-} */
-::placeholder{
-    color:#FF6316;
-}
