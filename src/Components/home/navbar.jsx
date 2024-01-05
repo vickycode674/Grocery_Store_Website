@@ -128,7 +128,7 @@ import {
     <Navbar className="mx-auto max-w-full px-4 py-2 lg:px-8 lg:py-4 rounded-none " style={{backgroundColor:darkMode?'black':'white'}}>
 <div className="container mx-auto flex flex-wrap items-center space-x-44 text-blue-gray-900">
     
-          <img src={darkMode ?Logo2 : Logo} className="w-100 h-10"/>
+          <img src={darkMode ?Logo2 : Logo} className="w-30 h-10"/>
        
         <div className="hidden items-center  lg:flex">
           <div className="relative flex w-full   md:w-max">

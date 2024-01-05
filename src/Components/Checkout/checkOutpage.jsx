@@ -4,7 +4,7 @@ import NavLinks from "../Wishlist/navLinks";
 import Banner from "./banner";
 //import the componnets
 import Check from "./check"
-import OrderSummery from './orderSummary';
+// import OrderSummery from './orderSummary';
 const CheckOutpage = () => {
     const [theme] = useThemeHook()
   return (
@@ -12,7 +12,7 @@ const CheckOutpage = () => {
     <NavLinks/>
      <Banner/>
     <div className={styles.main} style={{backgroundColor:theme ? 'black':''}}>
-        <OrderSummery/>
+        {/* <OrderSummery/> */}
         <Check/>
     </div>
     </>
