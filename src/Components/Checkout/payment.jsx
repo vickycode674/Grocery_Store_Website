@@ -5,7 +5,7 @@ function MyComponent() {
    return (
     <div style={{ position: 'absolute', top: '46%', right:'140px', transform: 'translateY(-50%)', zIndex: '9999',  }}>
 
-    <div className="items-start border bg-gray-800 flex max-w-[424px] flex-col p-6 rounded-lg border-solid border-neutral-600" style={{backgroundColor:theme?'transparent':'#ffffff',}}>
+    <div className="items-start border bg-gray-800 flex max-w-[424px] flex-col p-6 rounded-lg border-solid " style={{backgroundColor:theme?'transparent':'#ffffff',}}>
       <div className="text-white text-xl font-medium leading-8 self-stretch" style={{color:theme?'white':'black'}}>
         Order Summery
       </div>
