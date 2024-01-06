@@ -11,8 +11,8 @@ const PopularTag = () => {
   const [theme] = useThemeHook()
 
   return (
-    <div className="flex-column items-start justify-center pt-0 pb-[29px] px-0 ml-5 mr-6  ">
-      <Heading className="!flex-[0_0_auto] !shadow-[0px_-1px_0px_#e5e5e5] " text="Popular Tag" vector={VectorUp} />
+    <div className="flex-column items-start justify-center pt-0 pb-[29px] px-0  mr-6  ">
+      <Heading className="!flex-[0_0_auto] !shadow-[0px_-1px_0px_#e5e5e5] text-black text-2xl font-medium leading-8" text="Popular Tag" vector={VectorUp} />
       <div className="relative w-[294px] h-[197px] ">
         <Tag1 className="!absolute !left-0 !top-0  mr-8" property1="default" />
         <Tag1 className="!left-[94px] !absolute !top-0 gap-3" property1="hover" text="Low fat" />

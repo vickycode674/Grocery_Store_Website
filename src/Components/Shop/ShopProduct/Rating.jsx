@@ -11,7 +11,7 @@ export const Rating = () => {
   const [theme] = useThemeHook()
 
   return (
-    <div  className="inline-flex flex-col items-start relative ml-12">
+    <div  className="inline-flex flex-col items-start relative ">
       <Heading className="!flex-[0_0_auto] bg-gray-scalewhite" text="Rating" vector={VectorUp} />
 
       {/* Star Rating Filter */}
