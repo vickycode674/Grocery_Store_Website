@@ -16,8 +16,9 @@ import Whishlist from "./Components/Wishlist/container"
 import ShoppingPage from "./Components/ShoppingCart/shoppingPage";
 import CheckOutpage from "./Components/Checkout/checkOutpage";
 import Navbarrr from "./Components/home/navbar"
-import Footer from "./Components/home/footer";
+import Footer from "./Components/Homepage/Footer";
 import { useThemeHook } from "./Components/GlobalComponents/ThemeProvider";
+import Page from "./Components/Faq/Page";
 const App = () => {
   const [theme] = useThemeHook()
   return (
@@ -39,9 +40,10 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
-        {/* <Route path="/faq" element={<Page/>} /> */}
+        <Route path="/faq" element={<Page/>} />
 
       </Routes>
+
 
      
       <SubscribeOurNewsletter/><br></br>
