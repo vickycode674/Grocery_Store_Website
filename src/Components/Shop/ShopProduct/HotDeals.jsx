@@ -1,10 +1,14 @@
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 // import React from 'react'
 
 export const HotDeals = () => {
+  const [theme] = useThemeHook()
+
   return (
+    
     <div>
-                    <div className="text-black text-xl font-medium leading-8 self-stretch mt-5">
+                    <div className="text-black text-xl font-medium leading-8 self-stretch mt-5 "  style={{ color: theme ? "#fff" : "" }}>
                 Sale Products
               </div>
               <div className="items-center border border-[color:var(--Gray-Scale-Gray-100,#E6E6E6)] bg-white self-stretch flex justify-between gap-1.5 mt-3 pl-1.5 rounded-md border-solid">

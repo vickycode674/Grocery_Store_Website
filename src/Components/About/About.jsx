@@ -2,7 +2,7 @@
 import About1 from "./Images/About1.png";
 
 // import Banner from "./Images/Banner2.png";
-// import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
 
 
 import { WeDelvieredYou } from "./WeDeliver";
@@ -14,15 +14,17 @@ import Frame from "./Frame";
 import { Testimonial1 } from "./Testimonials/Testimonial1";
 
 function About() {
+    const [theme] = useThemeHook()
+
     return (
-        <div className="bg-white flex flex-col pb-8">
-            <div className="self-center w-full max-w-[1364px] mt-20 max-md:max-w-full max-md:mt-10">
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+        <div className=" flex flex-col pb-8" >
+            <div className="self-center w-full max-w-[1364px] mt-20 max-md:max-w-full max-md:mt-10" >
+                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0" >
                     <div className="flex flex-col items-stretch w-[45%] max-md:w-full max-md:ml-0">
-                        <div className="flex flex-col items-stretch my-auto px-5 max-md:max-w-full max-md:mt-10">
-                            <div className="text-black text-6xl font-semibold leading-[67px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
-                                100% Trusted Organic Food Store
-                            </div>
+                        <div className="flex flex-col items-stretch my-auto px-5 max-md:max-w-full max-md:mt-10" >
+                        <p style={{ color: theme ? "#fff" : "" }} className="text-6xl font-semibold  max-md:max-w-full max-md:text-4xl max-md:leading-[54px">100% Trusted Organic Food Store</p>  
+
+                          
                             <div className="text-stone-500 text-lg leading-7 mt-9 max-md:max-w-full">
                                 Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi,
                                 laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies
@@ -41,12 +43,16 @@ function About() {
                     </div>
                 </div>
             </div>
+            
 
             <Frame /> 
 
 
             <WeDelvieredYou />
 
+            <div className="text-black text-center text-5xl font-semibold leading-[57.6px] self-center max-md:max-w-full max-md:text-4xl "  style={{ color: theme ? "#fff" : "" }} >
+          Our Awesome Team
+        </div>
             <Team />
 
             <Testimonial1 />
