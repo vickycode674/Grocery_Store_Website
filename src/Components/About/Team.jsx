@@ -9,6 +9,8 @@ import ceo from "./Images/people/ceo.png";
 // TeamMember.js
 
 const TeamMember = ({ name, role, imageUrl }) => (
+  
+  
     <div className="self-stretch flex grow basis-[0%] flex-col justify-center items-stretch">
       <div className="border  border-[color:var(--Gray-Scale-Gray-100,#E6E6E6)] bg-white flex flex-col items-stretch pb-5 rounded-lg border-solid">
         <img
@@ -59,11 +61,9 @@ const TeamMember = ({ name, role, imageUrl }) => (
   ];
   
  export const Team = () => (
-    <div className="self-stretch flex w-full flex-col justify-center items-center px-16 py-12 max-md:max-w-full max-md:px-5">
-      <div className="flex w-full max-w-[1474px] flex-col items-stretch my-8 max-md:max-w-full">
-        <div className="text-black text-center text-5xl font-semibold leading-[57.6px] self-center max-md:max-w-full max-md:text-4xl">
-          Our Awesome Team
-        </div>
+
+    <div className="self-stretch flex w-full flex-col justify-center items-center px-16 py-12 pt-[-20%] max-md:max-w-full max-md:px-5 ">
+      <div className="flex w-full max-w-[1474px] flex-col items-stretch pt-[-20%] my-8 max-md:max-w-full">
         {/* Other content remains the same */}
         <div className="flex items-start justify-between gap-5 mt-12 max-md:max-w-full  sm:flex-row flex-col">
           {teamData.map((member, index) => (

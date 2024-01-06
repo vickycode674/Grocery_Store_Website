@@ -37,7 +37,7 @@ import Image15 from "../Images/Image-15.png"
 
 
 import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
-import { Price } from "../ShopProduct/Price";
+// import { Price } from "../ShopProduct/Price";
 // import {MainProducts} from "./ProductsMain";
 // export const Shop1 = () => {
 
@@ -96,11 +96,11 @@ import { Price } from "../ShopProduct/Price";
 
 
 export const Shop1 = () => {
-  // const [theme] = useThemeHook()
+  const [theme] = useThemeHook()
 
 
   return (
-    <div className="bg-white flex flex-col">
+    <div className="bg-white flex flex-col" style={{ background: theme ? "black" : "" }}>
 
 
       <div className="self-center flex w-full max-w-[1314px] items-stretch justify-between gap-5 mt-8 px-5 max-md:max-w-full max-md:flex-wrap">
@@ -205,7 +205,7 @@ export const Shop1 = () => {
 
 
               <div className="mt-6 px-5 max-md:max-w-full">
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0"  style={{ background: theme ? "#black" : "" }}>
                   <ProductCard
                     imageUrl={Image4}
                     title="  Eggplant"

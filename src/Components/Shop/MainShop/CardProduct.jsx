@@ -1,7 +1,10 @@
 // import React from 'react';
 import Bag from "../Images/Bag.svg"
+// import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+
 const ProductCard = ({ imageUrl, title, price, iconUrl}) => {
   return (
+    
     
     <div className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
         
@@ -28,10 +31,10 @@ const ProductCard = ({ imageUrl, title, price, iconUrl}) => {
           />
  
  
- <div className='ml-52 mt-[-19%]'   >
+ <div className='ml-52  absolute items-end md:mr-0'    >
  <button>
-           <div className="relative w-[60px] h-[60px] bg-gray-scalegray-50 rounded-[30px]">
-           <img className="absolute w-[40px] h-[40px] top-[10px] left-[10px]" alt="Bag" src={Bag} />
+           <div className="relative w-[60px] h-[60px] bg-gray-scalegray-50 rounded-[30px]  items-end  ">
+           <img className="absolute w-[40px] h-[40px] top-[10px] ml-3 " alt="Bag" src={Bag} />
     </div>
     </button>
 

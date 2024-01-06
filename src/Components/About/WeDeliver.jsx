@@ -2,19 +2,19 @@
 import check1 from "./Images/check 1.png";
 import group1 from "./Images/group1.png";
 import delivery from "./Images/delivery.png";
-// import { useThemeHook } from "../GlobalComponents/ThemeProvider";
+import { useThemeHook } from "../GlobalComponents/ThemeProvider";
 
 
 
 export const WeDelvieredYou = () => {
-    // const [theme] = useThemeHook()
+    const [theme] = useThemeHook()
 
     return (
-        <div className="self-center w-full ml-[10%] max-w-[1476px] mt-20 max-md:max-w-full max-md:mt-10">
+        <div className="self-center w-full ml-[10%] max-w-[1476px] mt-20 pb-8 max-md:max-w-full max-md:mt-10 ">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                 <div className="flex flex-col items-stretch w-[37%] max-md:w-full max-md:ml-0">
                     <div className="flex flex-col my-auto px-5 max-md:max-w-full max-md:mt-10">
-                        <div className="text-black text-5xl font-semibold leading-[58px] self-stretch max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+                        <div className="text-black text-5xl font-semibold leading-[58px] self-stretch max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" style={{ color: theme ? "#fff" : "" }}>
                             We Delivered, You Enjoy Your Order.
                         </div>
                         <div className="text-stone-500 text-base leading-6 self-stretch mt-7 max-md:max-w-full">
@@ -29,7 +29,7 @@ export const WeDelvieredYou = () => {
                                 src={check1}
                                 className="aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full"
                             />
-                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full">
+                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full" style={{ color: theme ? "#fff" : "" }}>
                                 Sed in metus pellentesque.
                             </div>
                         </div>
@@ -39,7 +39,7 @@ export const WeDelvieredYou = () => {
                                 src={check1}
                                 className="aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full"
                             />
-                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full">
+                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full" style={{ color: theme ? "#fff" : "" }}>
                                 Fusce et ex commodo, aliquam nulla efficitur, tempus lorem.
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export const WeDelvieredYou = () => {
                                 src={check1}
                                 className="aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full"
                             />
-                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full">
+                            <div className="text-stone-500 text-sm leading-5 grow max-md:max-w-full" style={{ color: theme ? "#fff" : "" }}>
                                 Maecenas ut nunc fringilla erat varius.
                             </div>
                         </div>
