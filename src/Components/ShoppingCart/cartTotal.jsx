@@ -1,31 +1,29 @@
-import styles from './CartTotal.module.css';
-import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 
-const CartTotal = () => {
-	const[theme] = useThemeHook()
-return (
-	<div className={styles.cartTotal}>
-		<div className={styles.bg} style={{ backgroundColor: theme ? '#2A2C38' : '' }} />
-		<div className={styles.button}>
-			<div className={styles.normal}>Proceed to checkout</div>
-		</div>
-		<div className={styles.info}>
-			<div className={styles.total} style={{ backgroundColor: theme ? '#2A2C38' : '' }}>
-				<div className={styles.total1} style={{ color: theme ? 'white' : '' }}>Total:</div>
-				<div className={styles.div} style={{ color: theme ? 'white' : '' }}>$84.00</div>
-			</div>
-			<div className={styles.shipping} style={{ backgroundColor: theme ? '#2A2C38' : '' }}>
-				<div className={styles.total1} style={{ color: theme ? 'white' : '' }}>Shipping:</div>
-				<div className={styles.free} style={{ color: theme ? 'white' : '' }}>Free</div>
-			</div>
-			<div className={styles.subtotal} style={{ backgroundColor: theme ? '#2A2C38' : '' }}>
-				<div className={styles.total1} style={{ color: theme ? 'white' : '' }}>Subtotal:</div>
-				<div className={styles.free} style={{ color: theme ? 'white' : '' }}>$84.00</div>
-			</div>
-		</div>
-		<div className={styles.cartTotal1} style={{ color: theme ? 'white' : '' }}>Cart Total</div>
+function CartTotal() {
+  return (
+    <div style={{ position: 'absolute', top: '36%', right: '100px', transform: 'translateY(-50%)', zIndex: '9999' }}>
+		<div  className="border bg-gray-800 flex max-w-[424px] flex-col items-stretch  px-6 py-7 rounded-lg border-solid border-neutral-600">
+      <div className="text-white text-xl font-medium leading-8">Cart Total</div>
+      <div className="justify-between items-stretch shadow-sm bg-gray-800 flex gap-5 mt-4 py-3">
+        <div className="text-zinc-400 text-sm leading-5">Subtotal:</div>
+        <div className="text-white text-sm font-medium leading-5">$84.00</div>
+      </div>
+      <div className="justify-between items-stretch shadow-sm bg-gray-800 flex gap-5 py-3">
+        <div className="text-zinc-400 text-sm leading-5">Shipping:</div>
+        <div className="text-white text-sm font-medium leading-5">Free</div>
+      </div>
+      <div className="justify-between items-stretch bg-gray-800 flex gap-5 py-3">
+        <div className="text-zinc-400 text-base leading-6">Total:</div>
+        <div className="text-white text-base font-semibold leading-5 self-center my-auto">
+          $84.00
+        </div>
+      </div>
+      <div className="text-white text-base font-semibold leading-5 whitespace-nowrap justify-center items-center bg-orange-500 mt-5 px-16 py-4 rounded-[43px]">
+        Proceed to checkout
+      </div>
+    </div>
 	</div>
-);
-};
+  );
+}
 
 export default CartTotal;

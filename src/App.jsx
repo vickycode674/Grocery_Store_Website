@@ -44,9 +44,10 @@ const App = () => {
 
       </Routes>
 
-      <SubscribeOurNewsletter/>
-       <Footer/> 
 
+     
+      <SubscribeOurNewsletter/><br></br>
+      <Footer/>
       {/* <Bottam/> */}
     </div>
   );
