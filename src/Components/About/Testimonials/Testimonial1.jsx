@@ -17,19 +17,19 @@ export const Testimonial1 = () => {
   const [theme] = useThemeHook();
 
   return (
-    <div className="bg-[#F2F2F2]">
+    <div className="bg-[#F2F2F2] w-[112%] ml-[-6%]">
       <div
       style={{ background: theme ? "black" : "" }}
-      className=" px-4 py-[100px] relative bg-gray-scalegray-50 w-[100%]"
+      className=" px-4 py-[100px] relative bg-gray-scalegray-50  w-[100%]"
     >
       <div className="flex flex-col items-center justify-between">
         <div
           style={{ color: theme ? "#fff" : "" }}
           className=" font-heading-02-heading-02-600 text-gray-scalegray-900 text-center"
         >
-          Client Testimonial
+          <p className="text-4xl mt-[-20%]">Client Testimonial </p>
         </div>
-        <div className="inline-flex items-start gap-[12px] ml-52 relative flex-[0_0_auto]">
+        <div className="inline-flex items-start gap-3 mb-6 ml-[74%] relative flex-[0_0_auto]">
           <div className="relative w-[45px] h-[45px] bg-gray-scalewhite rounded-[22.5px]">
             <img
               className="absolute w-[16px] h-[14px] top-[15px] left-[15px]"
@@ -46,7 +46,7 @@ export const Testimonial1 = () => {
           </div>
         </div>
       </div>
-      <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
+      <div className="gap-[10px] inline-flex items-start w-[100%]  relative flex-[0_0_auto] sm:flex-row flex-col">
         <TestimonialsCard
           className="!flex-[0_0_auto]"
           image={Image1}

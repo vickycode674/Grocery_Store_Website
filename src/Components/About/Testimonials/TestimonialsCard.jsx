@@ -9,7 +9,7 @@ export const TestimonialsCard = ({
 }) => {
   return (
     <div
-      className={`inline-flex flex-col items-start gap-[16px] p-[24px] relative bg-gray-scalewhite rounded-[8px] shadow-[0px_10px_20px_#00000003] ${className}`}
+      className={`inline-flex flex-col items-start gap-[8px] p-[24px] ml-[72px] relative bg-gray-scalewhite rounded-[8px] shadow-[0px_10px_20px_#00000003] ${className}`}
       style={{ width: '100%', maxWidth: '376px' }} // Responsive width
     >
       <img className="relative w-[32px] h-[26px]" alt="Vector" src={vector} />
@@ -24,7 +24,7 @@ export const TestimonialsCard = ({
         className="flex flex-col sm:flex-row w-[100%] items-center justify-between pt-[8px] sm:pt-0 pb-0 px-0 relative flex-[0_0_auto]"
         style={{ maxWidth: '100%' }} // Responsive flex width
       >
-        <div className="flex w-[100%] sm:w-[168px] items-center gap-[12px] relative">
+        <div className="flex w-[screen] sm:w-[168px] items-center gap-[1px] relative">
           <img className="relative w-[56px] h-[56px] object-cover" alt="Image" src={image} />
           <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
             <div
