@@ -36,44 +36,45 @@ export const Testimonial1 = () => {
               alt="Group"
               src={Group2}
             />
-          </div>
-          <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
-            <img
-              className="absolute w-[16px] h-[14px] top-[15px] left-[14px]"
-              alt="Group"
-              src={Group}
-            />
-          </div>
+            </div>
+            <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
+              <img
+                className="absolute w-[16px] h-[14px] top-[15px] left-[14px]"
+                alt="Group"
+                src={Group}
+              />
+            </div>
+         </div>
+        </div>
+
+        <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image1}
+            property1="default"
+            rating={rating}
+            vector={Vector}
+          />
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image2}
+            infoClassName="!mr-[-18.00px]"
+            property1="default"
+            rating={rating}
+            text="Dianne Russell"
+            vector={Vector}
+          />
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image3}
+            infoClassName="!mr-[-5.00px]"
+            property1="default"
+            rating={rating}
+            text="Eleanor Pena"
+            vector={Vector}
+          />
         </div>
       </div>
-      <div className="gap-[10px] inline-flex items-start w-[100%]  relative flex-[0_0_auto] sm:flex-row flex-col">
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image1}
-          property1="default"
-          rating={rating}
-          vector={Vector}
-        />
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image2}
-          infoClassName="!mr-[-18.00px]"
-          property1="default"
-          rating={rating}
-          text="Dianne Russell"
-          vector={Vector}
-        />
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image3}
-          infoClassName="!mr-[-5.00px]"
-          property1="default"
-          rating={rating}
-          text="Eleanor Pena"
-          vector={Vector}
-        />
-      </div>
-    </div>
     </div>
   );
 };

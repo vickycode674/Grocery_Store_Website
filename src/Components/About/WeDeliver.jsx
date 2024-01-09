@@ -8,9 +8,9 @@ export const WeDelvieredYou = () => {
   const [theme] = useThemeHook();
 
   return (
-    <div className="m-[5rem]">
+    <div className="mt-[2rem] md:m-[5rem]">
       <div className="md:flex justify-evenly gap-28">
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
           <h2
             className="text-6xl font-semibold max-md:text-4xl"
             style={{ color: theme ? "#fff" : "" }}
@@ -52,7 +52,7 @@ export const WeDelvieredYou = () => {
               </p>
             </div>
           </div>
-          <button className="text-white text-base font-semibold leading-5">
+          <button className="text-white text-base font-semibold leading-5 bg-[#FF6316] p-3 mt-5 rounded-full">
             Shop Now
           </button>
         </div>
