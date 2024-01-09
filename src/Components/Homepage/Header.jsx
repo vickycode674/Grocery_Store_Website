@@ -1,6 +1,3 @@
-
-
-
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../GlobalComponents/ThemeProvider";
 
@@ -15,12 +12,17 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(theme);
   const [count, setCount] = useState(0);
 
+  const [signinUp, setSigninUp] = useState(false);
+
   useEffect(() => {
     setThemeMode(darkMode);
     console.log(darkMode);
   }, [darkMode]);
 
-  
+  useEffect(() => {
+    const path = window.location.pathname;
+    setSigninUp(path==='/signIn'|| path==='/createAccount')
+  }, [window.location.pathname]);
 
   return (
     <>
@@ -50,7 +52,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-  
     </>
   );
 };

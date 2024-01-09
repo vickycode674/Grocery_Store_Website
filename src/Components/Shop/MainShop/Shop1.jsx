@@ -361,25 +361,25 @@ export const Shop1 = () => {
           />
         </div>
         <div className="items-stretch flex gap-0">
-          <div className="justify-center text-white text-center text-base font-medium leading-6 whitespace-nowrap items-center bg-orange-500 aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-white text-center text-base font-medium leading-6 whitespace-nowrap items-center bg-orange-500 aspect-square h-9 px-2 rounded-[130px] pt-1">
             1
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             2
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             3
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             4
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             5
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             ...
           </div>
-          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px]">
+          <div className="justify-center text-stone-500 text-center text-base leading-6 whitespace-nowrap items-center bg-white aspect-square h-9 px-2 rounded-[130px] pt-1">
             21
           </div>
         </div>

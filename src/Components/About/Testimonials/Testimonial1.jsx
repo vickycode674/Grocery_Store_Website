@@ -11,31 +11,43 @@ import rating from "../Images/testimonials/star 10.svg";
 import Vector from "../Images/testimonials/Vector.svg";
 import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
-
-
 import { TestimonialsCard } from "../Testimonials/TestimonialsCard";
 
 export const Testimonial1 = () => {
-    const [theme] = useThemeHook()
+  const [theme] = useThemeHook();
 
-    return (
-    
-            <div style={{ background: theme ? 'black' : '' }} className="inline-flex flex-col overflow-x-hidden mt-[-1px] items-center justify-center gap-[40px] px-4 py-[100px] relative bg-gray-scalegray-50">
-              <div className="flex flex-col items-center justify-between sm:px-[300px] px-4 py-0 relative sm:flex-row flex-[0_0_auto]">
-                <div style={{ color: theme ? '#fff' : '' }} className="relative mt-[-1.00px] font-heading-02-heading-02-600 text-gray-scalegray-900 text-[length:var(--heading-02-heading-02-600-font-size)] text-center tracking-[var(--heading-02-heading-02-600-letter-spacing)] leading-[var(--heading-02-heading-02-600-line-height)] whitespace-nowrap [font-style:var(--heading-02-heading-02-600-font-style)]">
-                  Client Testimonial
-                </div>
-                <div className="inline-flex items-start gap-[12px] ml-52 relative flex-[0_0_auto]">
-                  <div className="relative w-[45px] h-[45px] bg-gray-scalewhite rounded-[22.5px]">
-                    <img className="absolute w-[16px] h-[14px] top-[15px] left-[15px]" alt="Group" src={Group2} />
-                  </div>
-                  <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
-                    <img className="absolute w-[16px] h-[14px] top-[15px] left-[14px]" alt="Group" src={Group} />
-                  </div>
-                </div>
-              </div>
-              <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
-              <TestimonialsCard
+  return (
+    <div className="bg-[#F2F2F2]">
+      <div
+      style={{ background: theme ? "black" : "" }}
+      className=" px-4 py-[100px] relative bg-gray-scalegray-50 w-[100%]"
+    >
+      <div className="flex flex-col items-center justify-between">
+        <div
+          style={{ color: theme ? "#fff" : "" }}
+          className=" font-heading-02-heading-02-600 text-gray-scalegray-900 text-center"
+        >
+          Client Testimonial
+        </div>
+        <div className="inline-flex items-start gap-[12px] ml-52 relative flex-[0_0_auto]">
+          <div className="relative w-[45px] h-[45px] bg-gray-scalewhite rounded-[22.5px]">
+            <img
+              className="absolute w-[16px] h-[14px] top-[15px] left-[15px]"
+              alt="Group"
+              src={Group2}
+            />
+          </div>
+          <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
+            <img
+              className="absolute w-[16px] h-[14px] top-[15px] left-[14px]"
+              alt="Group"
+              src={Group}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
+        <TestimonialsCard
           className="!flex-[0_0_auto]"
           image={Image1}
           property1="default"
@@ -60,11 +72,13 @@ export const Testimonial1 = () => {
           text="Eleanor Pena"
           vector={Vector}
         />
-              </div>
-            </div>
-          );
-        };
-{/* <div className="justify-center items-stretch bg-zinc-100 self-stretch flex w-full flex-col py-12 max-md:max-w-full">
+      </div>
+    </div>
+    </div>
+  );
+};
+{
+  /* <div className="justify-center items-stretch bg-zinc-100 self-stretch flex w-full flex-col py-12 max-md:max-w-full">
 <div className="justify-center items-center flex w-full flex-col mt-12 px-16 max-md:max-w-full max-md:mt-10 max-md:px-5">
   <div className="flex w-full max-w-[1320px] items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
     <div className="text-black text-center text-5xl font-semibold leading-[57.6px] grow shrink basis-auto max-md:max-w-full max-md:text-4xl">
@@ -262,5 +276,5 @@ export const Testimonial1 = () => {
     </div>
   </div>
 </div>
-</div> */}
-
+</div> */
+}

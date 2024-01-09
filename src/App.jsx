@@ -18,7 +18,7 @@ import CheckOutpage from "./Components/Checkout/checkOutpage";
 import Navbarrr from "./Components/home/navbar"
 import Footer from "./Components/Homepage/Footer";
 import { useThemeHook } from "./Components/GlobalComponents/ThemeProvider";
-import Page from "./Components/Faq/Page";
+import Faq1 from "./Components/Faq/Faq1";
 const App = () => {
   const [theme] = useThemeHook()
   return (
@@ -40,13 +40,13 @@ const App = () => {
         <Route path="/setting" element={<Settings />} />
         <Route path="/order-details" element={<OrderDetails />} />
         <Route path="/order-history" element={<OrderHistory />} />
-        <Route path="/faq" element={<Page/>} />
+        <Route path="/faq" element={<Faq1/>} />
 
       </Routes>
 
 
      
-      <SubscribeOurNewsletter/><br></br>
+      {/* <SubscribeOurNewsletter/><br></br> */}
       <Footer/>
       {/* <Bottam/> */}
     </div>

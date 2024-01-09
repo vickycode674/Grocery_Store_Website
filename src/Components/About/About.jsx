@@ -4,7 +4,6 @@ import About1 from "./Images/About1.png";
 // import Banner from "./Images/Banner2.png";
 import { useThemeHook } from "../GlobalComponents/ThemeProvider";
 
-
 import { WeDelvieredYou } from "./WeDeliver";
 // // // import { Box } from "./Box/Box1";
 import { Team } from "./Team";
@@ -14,53 +13,36 @@ import Frame from "./Frame";
 import { Testimonial1 } from "./Testimonials/Testimonial1";
 
 function About() {
-    const [theme] = useThemeHook()
+  const [theme] = useThemeHook();
 
-    return (
-        <div className=" flex flex-col pb-8" >
-            <div className="self-center w-full max-w-[1364px] mt-20 max-md:max-w-full max-md:mt-10" >
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0" >
-                    <div className="flex flex-col items-stretch w-[45%] max-md:w-full max-md:ml-0">
-                        <div className="flex flex-col items-stretch my-auto px-5 max-md:max-w-full max-md:mt-10" >
-                        <p style={{ color: theme ? "#fff" : "" }} className="text-6xl font-semibold  max-md:max-w-full max-md:text-4xl max-md:leading-[54px">100% Trusted Organic Food Store</p>  
-
-                          
-                            <div className="text-stone-500 text-lg leading-7 mt-9 max-md:max-w-full">
-                                Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi,
-                                laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies
-                                elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at
-                                accumsan. Donec a eros non massa vulputate ornare. Vivamus
-                                ornare commodo ante, at commodo felis congue vitae.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-stretch w-[55%] ml-5 max-md:w-full max-md:ml-0">
-                        <img
-                            loading="lazy"
-                            src={About1}
-                            className="aspect-[1.46] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10"
-                        />
-                    </div>
-                </div>
-            </div>
-            
-
-            <Frame /> 
-
-
-            <WeDelvieredYou />
-
-            <div className="text-black text-center text-5xl font-semibold leading-[57.6px] self-center max-md:max-w-full max-md:text-4xl "  style={{ color: theme ? "#fff" : "" }} >
-          Our Awesome Team
+  return (
+    <div className=" m-[5rem]">
+      <div className="flex justify-evenly align-middle">
+        <div className="w-[48%]">
+          <p
+            style={{ color: theme ? "#fff" : "" }}
+            className="text-6xl font-semibold max-md:text-4xl"
+          >
+            100% Trusted
+            <br /> Organic Food Store
+          </p>
+          <div className="text-stone-500 text-lg leading-7 mt-9 ">
+            Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi,
+            laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit.
+            Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec
+            a eros non massa vulputate ornare. Vivamus ornare commodo ante, at
+            commodo felis congue vitae.
+          </div>
         </div>
-            <Team />
-
-            <Testimonial1 />
-
-
+        <div>
+          <img src={About1} className="w-[500px]" />
         </div>
-
-    );
+      </div>
+      <Frame />
+      <WeDelvieredYou />
+      <Testimonial1 />
+    </div>
+  );
 }
 
 export default About;
@@ -71,7 +53,6 @@ export default About;
 
 //         <div style={{ backgroundColor: theme ? "black" : "" }}>
 //             <img src={Banner} className="w-[98%] " alt='banner' />
-
 
 //             <div className='relative w-screen h-[492px] mt-20 text-center' style={{ backgroundColor: theme ? "black" : "" }}>
 //                 <p className='text-#000000 text-4xl font-bold absolute top-[36px] left-1/2 transform -translate-x-1/2' style={{ color: theme ? "#fff" : "" }}>
@@ -94,7 +75,6 @@ export default About;
 //                         Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.
 //                     </p>
 
-
 //                     <div className="grid-cols-2  w-screen">
 //                         <div>
 //                             <div className="inline-flex flex-wrap gap-[1px]  bg-gray-scalewhite relative left-[48%]  mt-[17%] ">
@@ -111,7 +91,6 @@ export default About;
 //                                 </div>
 //                             </div>
 
-
 //                             <div className="relative mt-[-112px] inline-flex left-[55%] bg-white">
 //                                 <div className=" inline-flex flex-col items-start p-[20px] relative bg-[#00b2061a] rounded-[1000px]">
 //                                     <img className="relative flex-[0_0_auto]" alt="Icon" src={Headphones} />
@@ -126,7 +105,6 @@ export default About;
 //                                 </div>
 //                             </div>
 //                         </div>
-
 
 //                         <div className="flex-col relative mt-[-240px]" >
 //                             <div>
@@ -143,7 +121,6 @@ export default About;
 //                                         </p>
 //                                     </div>
 //                                 </div>
-
 
 //                                 <div className="relative mt-[-112px] inline-flex left-[55%] bg-white">
 //                                     <div className=" inline-flex flex-col items-start p-[20px] relative bg-[#00b2061a] rounded-[1000px]">
@@ -174,7 +151,6 @@ export default About;
 //                                     </div>
 //                                 </div>
 
-
 //                                 <div className="relative mt-[-112px] inline-flex left-[55%] bg-white">
 //                                     <div className=" inline-flex flex-col items-start p-[20px] relative bg-[#00b2061a] rounded-[1000px]">
 //                                         <img className="relative flex-[0_0_auto]" alt="Icon" src={Package} />
@@ -191,11 +167,6 @@ export default About;
 //                             </div>
 //                         </div>
 
-
-
-
-
-
 //                         {/* part 3 delivery agent */}
 //                     </div>
 //                 </div>
@@ -209,11 +180,8 @@ export default About;
 //             // <Testimonial1 />
 //         </div>
 
-
 //     )
 // }
 
 // export default About;
 // import * as React from "react";
-
-

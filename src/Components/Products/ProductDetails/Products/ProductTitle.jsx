@@ -31,10 +31,10 @@ const ProductTitle = () => {
           </div>
           <div className="flex gap-5 items-center">
             <span className="text-[#666666] text-sm  whitespace-nowrap">4 Review</span>
-            <span className="text-zinc-400 text-sm font-medium">•</span>
-            <p className="text-[#333333] text-sm  whitespace-nowrap">
+            {/* <span className="text-zinc-400 text-sm font-medium">•</span> */}
+            {/* <p className="text-[#333333] text-sm  whitespace-nowrap">
               SKU:<span className="text-[#666666] whitespace-nowrap">2,51,594</span>
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -47,19 +47,18 @@ const ProductTitle = () => {
       </div>
       <div className="border-b-2 pb-6 mt-8">
         <div className="md:flex justify-between  ">
-          <div className="flex items-center gap-5 ">
+          {/* <div className="flex items-center gap-5 ">
             <p>Brand:</p>
             <img src={farmery} />
-          </div>
+          </div> */}
           <div className="flex items-center gap-5 ">
             <p>Share item:</p>
-            <div className="hover:bg-[#FF6316] hover:p-2 hover:text-[#fff] hover:rounded-full">
+            <div className="hover:bg-[#FF6316] hover:p-2 p-2 hover:text-[#fff] hover:rounded-full">
             <FaFacebookF/>
             </div>
-            <div className="hover:bg-[#FF6316] hover:p-2 hover:text-[#fff] hover:rounded-full "><FaTwitter /></div>
-            <div className="hover:bg-[#FF6316] hover:p-2 hover:text-[#fff] hover:rounded-full "><FaPinterestP /></div>
-            <div className="hover:bg-[#FF6316] hover:p-2 hover:text-[#fff] hover:rounded-full ">  <FaInstagram /></div>
-          
+            {/* <div className="hover:bg-[#FF6316] hover:p-2 p-2 hover:text-[#fff] hover:rounded-full "><FaTwitter /></div> */}
+            {/* <div className="hover:bg-[#FF6316] hover:p-2 p-2 hover:text-[#fff] hover:rounded-full "><FaPinterestP /></div> */}
+            <div className="hover:bg-[#FF6316] hover:p-2 p-2 hover:text-[#fff] hover:rounded-full ">  <FaInstagram /></div>
           </div>
         </div>
         <p className="mt-5 text-[#808080] text-sm">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos<br/> himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla<br/> varius magna a consequat pulvinar. </p>
