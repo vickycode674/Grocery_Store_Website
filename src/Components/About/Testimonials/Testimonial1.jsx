@@ -17,63 +17,63 @@ export const Testimonial1 = () => {
   const [theme] = useThemeHook();
 
   return (
-    <div className="bg-[#F2F2F2]">
+    <div>
       <div
-      style={{ background: theme ? "black" : "" }}
-      className=" px-4 py-[100px] relative bg-gray-scalegray-50 w-[100%]"
-    >
-      <div className="flex flex-col items-center justify-between">
-        <div
-          style={{ color: theme ? "#fff" : "" }}
-          className=" font-heading-02-heading-02-600 text-gray-scalegray-900 text-center"
-        >
-          Client Testimonial
+        style={{ background: theme ? " rgba(255, 84, 0, 0.51)" : "#F2F2F2" }}
+        className=" px-4 py-[100px] relative bg-gray-scalegray-50 w-[100%]"
+      >
+        <div className="flex flex-col items-center justify-between">
+          <div
+            style={{ color: theme ? "#fff" : "" }}
+            className=" font-heading-02-heading-02-600 text-gray-scalegray-900 text-center"
+          >
+            Client Testimonial
+          </div>
+          <div className="inline-flex items-start gap-[12px] ml-52 relative flex-[0_0_auto]">
+            <div className="relative w-[45px] h-[45px] bg-gray-scalewhite rounded-[22.5px]">
+              <img
+                className="absolute w-[16px] h-[14px] top-[15px] left-[15px]"
+                alt="Group"
+                src={Group2}
+              />
+            </div>
+            <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
+              <img
+                className="absolute w-[16px] h-[14px] top-[15px] left-[14px]"
+                alt="Group"
+                src={Group}
+              />
+            </div>
+          </div>
         </div>
-        <div className="inline-flex items-start gap-[12px] ml-52 relative flex-[0_0_auto]">
-          <div className="relative w-[45px] h-[45px] bg-gray-scalewhite rounded-[22.5px]">
-            <img
-              className="absolute w-[16px] h-[14px] top-[15px] left-[15px]"
-              alt="Group"
-              src={Group2}
-            />
-          </div>
-          <div className="relative w-[45px] h-[45px] bg-brandingsuccess rounded-[22.5px]">
-            <img
-              className="absolute w-[16px] h-[14px] top-[15px] left-[14px]"
-              alt="Group"
-              src={Group}
-            />
-          </div>
+        <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image1}
+            property1="default"
+            rating={rating}
+            vector={Vector}
+          />
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image2}
+            infoClassName="!mr-[-18.00px]"
+            property1="default"
+            rating={rating}
+            text="Dianne Russell"
+            vector={Vector}
+          />
+          <TestimonialsCard
+            className="!flex-[0_0_auto]"
+            image={Image3}
+            infoClassName="!mr-[-5.00px]"
+            property1="default"
+            rating={rating}
+            text="Eleanor Pena"
+            vector={Vector}
+          />
         </div>
       </div>
-      <div className="gap-[24px] inline-flex items-start relative flex-[0_0_auto] sm:flex-row flex-col">
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image1}
-          property1="default"
-          rating={rating}
-          vector={Vector}
-        />
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image2}
-          infoClassName="!mr-[-18.00px]"
-          property1="default"
-          rating={rating}
-          text="Dianne Russell"
-          vector={Vector}
-        />
-        <TestimonialsCard
-          className="!flex-[0_0_auto]"
-          image={Image3}
-          infoClassName="!mr-[-5.00px]"
-          property1="default"
-          rating={rating}
-          text="Eleanor Pena"
-          vector={Vector}
-        />
-      </div>
-    </div>
     </div>
   );
 };

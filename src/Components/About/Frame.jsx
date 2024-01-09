@@ -12,10 +12,10 @@ const Frame = () => {
   const [theme] = useThemeHook();
 
   return (
-    <div>
+    <div style={{ background: theme ? "#FF6316" : ""}}>
       <div className="md:flex justify-evenly items-center mt-16 gap-28">
         <img src={About2} className="w-[500px]" />
-        <div className="m-5 w-[50%]">
+        <div className="md:m-5 md:w-[50%]">
           <div>
             <h2 className="text-6xl font-semibold max-md:text-4xl">
               100% Trusted
@@ -28,10 +28,14 @@ const Frame = () => {
               porro facilis. Iste, autem.
             </p>
           </div>
-          <div className="md:flex mt-[3rem] gap-28">
+          <div className="md:flex mt-[2rem] md:mt-[3rem] gap-28">
             <div className="flex flex-col">
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={leaf2} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={leaf2}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">
@@ -40,7 +44,11 @@ const Frame = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={stars} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={stars}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">
@@ -49,7 +57,11 @@ const Frame = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={delivery} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={delivery}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">
@@ -60,7 +72,11 @@ const Frame = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={Headphones} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={Headphones}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">
@@ -69,7 +85,11 @@ const Frame = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={Shoppingbag} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={Shoppingbag}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">
@@ -78,7 +98,11 @@ const Frame = () => {
                 </div>
               </div>
               <div className="flex justify-center gap-2 items-center pb-6">
-                <img src={Package} className="p-2 rounded-full" style={{background:"rgba(0, 178, 7, 0.1)"}}/>
+                <img
+                  src={Package}
+                  className="p-2 rounded-full"
+                  style={{ background: "rgba(0, 178, 7, 0.1)" }}
+                />
                 <div className="flex flex-col">
                   <h5 className="font-medium text-[18px]">100% Organic food</h5>
                   <p className="text-[#FF0000] text-base">

@@ -16,9 +16,9 @@ function About() {
   const [theme] = useThemeHook();
 
   return (
-    <div className=" m-[5rem]">
-      <div className="flex justify-evenly align-middle">
-        <div className="w-[48%]">
+    <div className="m-[2rem] md:m-[5rem]">
+      <div className="md:flex justify-evenly align-middle">
+        <div className="md:w-[48%]">
           <p
             style={{ color: theme ? "#fff" : "" }}
             className="text-6xl font-semibold max-md:text-4xl"

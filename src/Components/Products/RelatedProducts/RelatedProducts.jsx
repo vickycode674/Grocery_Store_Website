@@ -8,8 +8,10 @@ import AddTowishlist from "../Images/AddTowishlist.png";
 import QuickView from "../Images/QuickView.png";
 import { SlHandbag } from "react-icons/sl";
 import Rating from "./Rating";
+import { useThemeHook } from "../../GlobalComponents/ThemeProvider";
 
 const RelatedProducts = () => {
+  const [theme] = useThemeHook();
   const items = [
     {
       img: greenApple,
@@ -40,7 +42,7 @@ const RelatedProducts = () => {
 
   return (
     <div className="pt-5 md:mt-16">
-      <h3 className="flex justify-center font-semibold text-3xl mb-10">
+      <h3 className="flex justify-center font-semibold text-3xl mb-10" style={{ color: theme ? "#fff" : "#000000" }}>
         Related Products
       </h3>
       <div className="flex justify-center  ">
@@ -59,10 +61,10 @@ const RelatedProducts = () => {
 
               <div className="flex justify-between items-center pb-3">
                 <div className="ml-[7%] mt-[6%]">
-                  <p className="text-sm group-hover:text-[#FF6316] text-[#808080] pb-2">
+                  <p className="text-sm group-hover:text-[#FF6316] pb-2" style={{ color: theme ? "#fff" : "#808080" }}>
                     {item.title}
                   </p>
-                  <p className="font-medium text-xl pb-2">{item.price}</p>
+                  <p className="font-medium text-xl pb-2" style={{ color: theme ? "#fff" : "#808080" }}>{item.price}</p>
                   <Rating ratings={item.ratings} />
                 </div>
                 <div className="bg-[#F2F2F2] group-hover:bg-[#FF6316] group-hover:text-[#fff] flex justify-center items-center rounded-full p-3 mr-[5%]">

@@ -61,7 +61,8 @@ const Faq1 = () => {
                   } rounded-md`}
                 >
                   <div
-                    className="flex justify-between bg-[#F2F2F2] p-2 mb-2 rounded-md cursor-pointer"
+                    className="flex justify-between p-2 mb-2 rounded-md cursor-pointer"
+                    style={{background:theme?"#2A2C38":"#F2F2F2", color:theme?"#fff":"#000000"}}
                     onClick={() => handleAcc(item.id)}
                   >
                     <p
